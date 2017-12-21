@@ -1,1 +1,702 @@
+body,p{
+    margin:0;
+    padding:0;
+}
+ul{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+#headnav,header,#banner,#tesepindao,#titleimage,#aritcle-image1,section,article,#gongneng,#fuwu,footer{
+    width:1190px;
+    margin:0 auto;
+    
+}
+
+//头部导航
+#headnav-wrap{
+    width:100%;
+    background:#f7f7f7;
+    font-size: 12px;
+    height:35px;
+    #headnav{
+        height:35px;
+
+        margin:0 auto;
+        .denglu{
+            float:left;
+//          width:244px;
+            height:35px;
+            .denglu-last{
+                border-left:1px solid black;
+                span{
+                    margin-top:3px;
+                    float:right;
+                    display: block;
+                    width:7px;
+                    height:5px;
+                    background:url(../img/fn_g_header.png) -140px -28px no-repeat;
+                }
+            }
+            li{
+                height:12px;
+                margin-top:11px;
+                float:left;
+                line-height:12px;
+                padding:0 10px;
+            }
+        }
+        .fuwu{
+            float:left;
+//          width:616px;
+            height:35px;
+            margin:{
+                left:330px;
+            }
+            li{
+                height:12px;
+                float:left;
+                margin-top:11px;
+                line-height: 12px;
+                padding:0 10px;
+                .chongzhi{
+                    float:left;
+                    margin:{
+                        right:5px;
+                        top:-3px;
+                    }
+                    width:12px;
+                    height:16px;
+                    background: url(../img/fn_g_header.png) -36px -96px;
+                }
+                .phonefeiniu{
+                    float:left;
+                    margin:{
+                        right:5px;
+                        top:-3px;
+                    }
+                    width:12px;
+                    height:16px;
+                    background: url(../img/fn_g_header.png) -136px -44px;
+                }
+                .xinlang{
+                    margin-top:-3px;
+                    float:right;
+                    width:20px;
+                    height:20px;
+                    background: url(../img/fn_g_header.png) -109px -75px no-repeat;
+                }
+                .vxin{
+                    margin-top:-3px;
+                    float:right;
+                    width:20px;
+                    height:20px;
+                    background: url(../img/fn_g_header.png) -89px -75px no-repeat;
+                }
+                span{
+                    margin-top:3px;
+                    float:right;
+                    display: block;
+                    width:7px;
+                    height:5px;
+                    background:url(../img/fn_g_header.png) -140px -28px no-repeat;
+                }
+            }
+        }
+    }
+    
+}
+//头部搜索框
+header{
+    height:120px;
+    background:white;
+    padding-top:16px;
+    img{
+        float:left;
+    }
+    .sousuo{
+        float:left;
+        margin:{
+            left:30px;
+        }
+        width:442px;
+        height:38px;
+        border:2px solid #d7063b;
+    }
+    .btn{
+        width:98px;
+        height:44px;
+        background: #d7063b;
+        color:white;
+        border:none;
+        font-size:16px;
+        float:left;
+        margin:{
+            right:118px;
+        }
+    }
+    .mypaycar{
+        width:80px;
+        height:45px;
+        background:#e9e9e9;
+        color:white;
+        float:left;
+        text-align: center;
+        line-height: 45px;
+    }
+    .gouwuche{
+        float:left;
+        height:45px;
+        width:64px;
+        background:#d7063b;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .car{
+            width:20px;
+            height:16px;
+            background: url(../dist/img/fn_g_header.png) -70px -97px;
+        }
+        .zero{
+            display: inline-block;
+            width:20px;
+            height:16px;
+            color:white;
+        }
+        
+    }
+    .sousuo-nav{
+        margin:{
+            left:30px;
+            right:200px;
+        }
+        float:left;
+        display: flex;
+        justify-content: flex-start;
+        li{
+            margin:{
+                right:10px;
+            }
+            color:#cecece;
+            font-size:12px;
+        }
+    }
+    .lingyuan{
+        float:right;
+        margin:{
+            right:25px;
+        }
+    }
+    .all-pay{
+        float:left;
+        width:190px;
+        height:41px;
+        margin:{
+            top:18px;
+        }
+        background:#d7063b;
+        a{
+            color: white;
+            line-height: 41px;
+        }
+        .leibie{
+            float:left;
+            margin:{
+                top:15px;
+                right:5px;
+                left:10px;
+            }
+            width:16px;
+            height:10px;
+            background: url(../img/fn_g_header.png) 0 -114px;
+        }
+    }
+    .title-nav{
+        margin:{
+            top:18px;
+            left:15px;
+        }
+        float:left;
+        display: flex;
+        justify-content: flex-start;
+        li{
+            a{
+                font-size:14px;
+                font-weight: 900;
+                line-height: 41px; 
+                color:black;
+            }
+            .hot{
+                position:relative;
+            }
+            margin:{
+                right:30px;
+            }
+            .hot-pay{
+                display: block;
+                width:27px;
+                height:18px;
+                background: url(../img/fn_g_header.png) 0 -140px;
+                position:absolute;
+                top:-12px;
+                right:-2px;
+                
+            }
+        }
+    }
+}
+//轮播 侧边导航栏
+#banner-wrap{
+    width:100%;
+    background:#ff8901;
+    height:455px;
+    #banner{
+        display: flex;
+        justify-content: flex-start;
+        height:455px;
+        #nav-right{
+            padding:{
+                top:3px;
+            }
+            width:191px;
+            height:452px;
+            background:#f9f3ec;
+            .nav-img{
+               
+                display:inline-block;
+                width:18px;
+                height:18px;
+                background: url(../img/shengxian.jpg) center no-repeat;
+                margin:{
+                    left:8px;
+                    right:10px;
+                }
+            }
+            .nav-p{
+                display: inline-block;
+                height:30px;
+                line-height: 30px;
+                font:{
+                    size:14px;
+                }
+            }
+        }
+        #lunbo{
+            width:800px;
+            height:454px;
+        }
+        #kefu{
+            width:180px;
+            height:414px;
+            background: #f9f3ec;
+            padding:10px;
+            margin:{
+                top:10px;
+            }
+            #zaixian{
+                width:180px;
+                height:80px;
+                margin-bottom:12px;
+                border-bottom: 1px dashed #CECECE;
+                li{
+                    float:left;
+                    height:80px;
+                    span{
+                        display: block;
+                        font:{
+                            size:12px;
+                            color:#CECECE;
+                        }
+                    }
+                }
+                .youpian{
+                    margin:{
+                       right:15px;
+                   }
+                }
+            }
+            .zhaopin{
+                width:180px;
+                height:47px;
+                font-size:12px;
+                border-bottom: 1px dashed #CECECE;
+            }
+            .huafei{
+                display: block;
+                width:90px;
+                height:25px;
+                float:left;
+                background: #f9f3ec;
+                text-align: center;
+                line-height: 25px;
+                border-bottom: 1px solid #CECECE;
+                margin-bottom:10px;
+            }
+            input{
+                width:180px;
+                height:25px;
+                background:#fff9f2;
+                border:1px solid #CECECE;
+            }
+            .shoujia{
+                i{
+                    font-style: normal;
+                    color:red;
+                }
+                    margin-bottom:25px;
+            }
+            .liji{
+                width:80px;
+                height:28px;
+                color:white;
+                text-align: center;
+                line-height: 28px;
+                background:red;
+                margin-bottom: 10px;
+            }
+            .kefu-img{
+                margin-left:-10px;
+            }
+        }
+    }
+}
+//特色频道
+#tesepindao{
+    height:63px;
+    background:white;
+    text-align: center;
+    line-height: 63px;
+    color:#CECECE;
+    font:{
+        size:24px;
+        weight:900;
+    }
+}
+//头图
+#titleimage{
+    height:235px;
+    display: flex;
+    justify-content: space-between;
+    margin:{
+        bottom: 30px;
+    }
+}
+//夹缝图
+#aritcle-image1{
+    height:100px;
+    margin:{
+        bottom:25px;
+    }
+}
+//楼梯间
+section{
+    height:7733px;
+    background:red;
+    margin:{
+        bottom:30px;
+    }
+//一楼
+    #one-floor{
+        margin-bottom:10px;
+        .biaoti{
+            float:left;
+            width:465px;
+            border-bottom:1px solid red;
+            span{
+                line-height: 25px;
+                text-align: center;
+                float: left;
+                background: url(../img/jinglingtu2.png) -124px -94px no-repeat;
+                width:30px;
+                height:25px;
+                margin-right:10px;
+            }
+        }
+        .floor-nav{
+            float:left;
+            width:723px;
+            height:35px;
+            border:1px solid #CECECE;
+            border-bottom:1px solid red;
+            a{
+                color:black;
+            }
+            li{
+                float:left;
+                width:119px;
+                height:35px;
+                text-align: center;
+                line-height: 35px;
+                span{
+                    float:left;
+                    display: block;
+                    width:2px;
+                    height:10px;
+                    background:#CECECE;
+                    margin-top:15px;
+                }
+            }
+        }
+        .huowu{
+            width:1190px;
+            height:488px;
+            .huowu-nav{
+                width:190px;
+                height:488px;
+                float:left;
+                background:url(../img/jiangyou.jpg);
+                position:relative;
+                .nav-1{
+                    width: 190px;
+                    height:62px;
+                    position:absolute;
+                    top:244px;
+                    background: #ffe7d5;
+                    a{
+                        color:black;
+                        line-height: 18px;
+                        font-size: 12px;
+                    }
+                }
+               .nav-2{
+                    align-content: flex-start;
+                    width: 170px;
+                    height:162px;
+                    position:absolute;
+                    top:306px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    padding:10px;
+                    background:#fff0e5;
+                    a{
+                        display: block;
+                        font-size: 12px;
+                        color: black;
+                        margin-right:10px;
+                        line-height: 25px;
+                    }
+               }
+            }
+            .huowu-lei{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-content: flex-start;
+                width:1000px;
+                height:488px;
+                float:left;
+                background: green;
+                .kuangone{
+                    width:399px;
+                    height:316px;
+                    border-bottom:1px solid #CECECE;
+                }
+                .kuangtwo{
+                    width:199px;
+                    height:316px;
+                    border:{
+                        left:1px solid #cecece;
+                        bottom:1px solid #cecece;
+                    }
+                }
+                .kuangthree{
+                    width:399px;
+                    height:170px;
+                    border-bottom:1px solid #CECECE;
+                }
+                .kuangfour{
+                    width:199px;
+                    height:170px;
+                    border:{
+                        left:1px solid #cecece;
+                        bottom:1px solid #cecece;
+                    }
+                }
+            }
+        }
+    }
+    .jiatu-1{
+        width:1190px;
+        height:61px;
+        .jiatu-nav{
+            li{
+                float:left;
+                padding:10px 0;
+                a{
+                    float: left;
+                    display: block;
+                    width:100px;
+                    height:30px;
+                    background: url(../img/yanghejiuchang.jpg);
+                    margin:0 10px;
+                }
+                .jiatu-xian{
+                    float:left;
+                    display: block;
+                    width:1px;
+                    height:20px;
+                    background:#CECECE;
+                    margin-top:5px;
+                }
+                .jiatu-nav-last{
+                    margin:0;
+                }
+                
+            }
+        }
+    }  
+    
+    
+//二楼  
+    #two-floor{
+        margin-bottom:10px;
+        .biaoti{
+            float:left;
+            width:465px;
+            border-bottom:1px solid red;
+            span{
+                line-height: 25px;
+                text-align: center;
+                float: left;
+                background: url(../img/jinglingtu2.png) -124px -94px no-repeat;
+                width:30px;
+                height:25px;
+                margin-right:10px;
+            }
+        }
+        .floor-nav{
+            float:left;
+            width:723px;
+            height:35px;
+            border:1px solid #CECECE;
+            border-bottom:1px solid red;
+            a{
+                color:black;
+            }
+            li{
+                float:left;
+                width:119px;
+                height:35px;
+                text-align: center;
+                line-height: 35px;
+                span{
+                    float:left;
+                    display: block;
+                    width:2px;
+                    height:10px;
+                    background:#CECECE;
+                    margin-top:15px;
+                }
+            }
+        }
+        .huowu{
+            width:1190px;
+            height:488px;
+            .huowu-nav{
+                width:190px;
+                height:488px;
+                float:left;
+                background:url(../img/jiangyou.jpg);
+                position:relative;
+                .nav-1{
+                    width: 190px;
+                    height:62px;
+                    position:absolute;
+                    top:244px;
+                    background: #ffe7d5;
+                    a{
+                        color:black;
+                        line-height: 18px;
+                        font-size: 12px;
+                    }
+                }
+               .nav-2{
+                    align-content: flex-start;
+                    width: 170px;
+                    height:162px;
+                    position:absolute;
+                    top:306px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    padding:10px;
+                    background:#fff0e5;
+                    a{
+                        display: block;
+                        font-size: 12px;
+                        color: black;
+                        margin-right:10px;
+                        line-height: 25px;
+                    }
+               }
+            }
+            .huowu-lei{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-content: flex-start;
+                width:1000px;
+                height:488px;
+                float:left;
+                background: green;
+                .kuangone{
+                    width:399px;
+                    height:316px;
+                    border-bottom:1px solid #CECECE;
+                }
+                .kuangtwo{
+                    width:199px;
+                    height:316px;
+                    border:{
+                        left:1px solid #cecece;
+                        bottom:1px solid #cecece;
+                    }
+                }
+                .kuangthree{
+                    width:399px;
+                    height:170px;
+                    border-bottom:1px solid #CECECE;
+                }
+                .kuangfour{
+                    width:199px;
+                    height:170px;
+                    border:{
+                        left:1px solid #cecece;
+                        bottom:1px solid #cecece;
+                    }
+                }
+            }
+        }
+    }
+}
+
+article{
+    height:187px;
+    background: green;
+    margin:{
+        bottom:150px;
+    }
+}
+
+#gongneng{
+    height:136px;
+    background:orange;
+}
+
+#fuwu{
+    height:202px;
+    background:yellow;
+}
+
+footer{
+    height:252px;
+    background:purple;
+}
 
