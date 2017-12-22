@@ -4,6 +4,9 @@
 		<meta charset="UTF-8">
 		<title>首页</title>
 		<link rel="stylesheet" href="css/homepage.css" />
+		<script type="text/javascript" src="js/homepage.js"></script>
+		<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+		<script src="js/startMove.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<!--头部导航栏-->
@@ -80,7 +83,21 @@
 					<div><span class="nav-img"></span><p class="nav-p">保健、计生、器械</p></div>
 					<div><span class="nav-img"></span><p class="nav-p">购物卡、票券</p></div>
 				</div>
-				<div id="lunbo"></div>
+				<!--轮播-->
+				<div id="lunbo">
+					<ul id="lunbo-photo">
+						<li><a href=""><img src="img/banner1.jpg" alt="" /></a></li>
+						<li><a href=""><img src="img/banner2.jpg" alt="" /></a></li>
+						<li><a href=""><img src="img/banner3.jpg" alt="" /></a></li>
+						<li><a href=""><img src="img/banner4.jpg" alt="" /></a></li>
+						<li><a href=""><img src="img/banner5.jpg" alt="" /></a></li>
+						<li><a href=""><img src="img/banner6.jpg" alt="" /></a></li>
+						<li><a href=""><img src="img/banner7.jpg" alt="" /></a></li>
+						<li><a href=""><img src="img/banner8.jpg" alt="" /></a></li>
+						<li><a href=""><img src="img/banner1.jpg" alt="" /></a></li>
+					</ul>
+				</div>
+				
 				<div id="kefu">
 					<ul id="zaixian">
 						<li class="youpian">
@@ -126,8 +143,9 @@
 		</div>
 		<!--楼梯间-->
 		<section>
+			<!--一楼-->
 			<div id="one-floor">
-				<p class="biaoti"><span>1F</span>食品饮料</p>
+				<p class="biaoti"><span class="loubiao">1F</span><span class="biaoming">食品饮料</span></p>
 				<ul class="floor-nav">
 					<a href=""><li>精选推荐</li></a>
 					<a href=""><li>休闲零食<span></span></li></a>
@@ -161,10 +179,12 @@
 						</div>
 					</div>
 					<div class="huowu-lei">
+						<!--第一列大图-->
 						<div class="kuangone"></div>
 						<div class="kuangtwo"></div>
 						<div class="kuangtwo"></div>
 						<div class="kuangtwo"></div>
+						<!--第二列轮播图-->
 						<div class="kuangthree"></div>
 						<div class="kuangfour"></div>
 						<div class="kuangfour"></div>
@@ -172,6 +192,7 @@
 					</div>
 				</div>
 			</div>
+			<!--夹图1-->
 			<div class="jiatu-1">
 				<ul class="jiatu-nav">
 					<li><a href=""></a><span class="jiatu-xian"></span></li>
@@ -187,9 +208,11 @@
 					
 				</ul>
 			</div>
+<!----------------二楼---------------->		
 			<div id="two-floor">
-				<p class="biaoti"><span>1F</span>食品饮料</p>
-				<ul class="floor-nav">
+				<p class="f2-biaoti"><span class="loubiao">2F</span><span class="biaoming">食品饮料</span></p>
+				 
+				<ul class="f2-floor-nav">
 					<a href=""><li>精选推荐</li></a>
 					<a href=""><li>休闲零食<span></span></li></a>
 					<a href=""><li>酒水饮料<span></span></li></a>
@@ -197,13 +220,13 @@
 					<a href=""><li>粮油调味<span></span></li></a>
 					<a href=""><li>营养保健<span></span></li></a>
 				</ul>
-				<div class="huowu">
-					<div class="huowu-nav">
-						<div class="nav-1">
+				<div class="f2-huowu">
+					<div class="f2-huowu-nav">
+						<div class="f2-nav-1">
 							<p><a href="">嘉顿满30元送嘉顿饼干>></a></p>
 							<p><a href="">豪雄第二件半价>></a></p>
 						</div>
-						<div class="nav-2">
+						<div class="f2-nav-2">
 								<a href="">口香糖</a>
 								<a href="">口香糖</a>
 								<a href="">口香糖</a>
@@ -221,32 +244,700 @@
 								<a href="">口香糖</a>
 						</div>
 					</div>
-					<div class="huowu-lei">
-						<div class="kuangone"></div>
-						<div class="kuangtwo"></div>
-						<div class="kuangtwo"></div>
-						<div class="kuangtwo"></div>
-						<div class="kuangthree"></div>
-						<div class="kuangfour"></div>
-						<div class="kuangfour"></div>
-						<div class="kuangfour"></div>
+					<div class="f2-huowu-lei">
+						<div class="f2-kuangtwo"></div>
+						<!--第一行大图-->
+						<div class="f2-kuangone"></div>
+						<div class="f2-kuangtwo"></div>
+						<div class="f2-kuangtwo"></div>
+						<div class="f2-kuangfour"></div>
+						<div class="f2-kuangfour"></div>
+						<div class="f2-kuangfour"></div>
+						<div class="f2-kuangfour"></div>
+						<div class="f2-kuangfour"></div>
 					</div>
 				</div>
 			</div>
-			<div id="three-floor"></div>
-			<div id="four-floor"></div>
-			<div id="five-floor"></div>
-			<div id="six-floor"></div>
-			<div id="seven-floor"></div>
-			<div id="eight-floor"></div>
-			<div id="nine-floor"></div>
-			<div id="ten-floor"></div>
-			<div id="eleven-floor"></div>
+			<!--夹图2.1-->
+			<div class="jiatu-2">
+				<ul class="jiatu-nav">
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href="" class="jiatu-nav-last"></a></li>
+					
+				</ul>
+			</div>
+			<!--夹图2.2-->
+			<div class="jiatu-2-2">
+				<a href=""></a>
+			</div>
+			<!--三楼-->
+			<div id="three-floor">
+				<p class="f3-biaoti"><span class="loubiao">3F</span><span class="biaoming">食品饮料</span></p>
+				<ul class="f3-floor-nav">
+					<a href=""><li>精选推荐</li></a>
+					<a href=""><li>休闲零食<span></span></li></a>
+					<a href=""><li>酒水饮料<span></span></li></a>
+					<a href=""><li>茶冲饮品<span></span></li></a>
+					<a href=""><li>粮油调味<span></span></li></a>
+					<a href=""><li>营养保健<span></span></li></a>
+				</ul>
+				<div class="f3-huowu">
+					<div class="f3-huowu-nav">
+						<div class="f3-nav-1">
+							<p><a href="">嘉顿满30元送嘉顿饼干>></a></p>
+							<p><a href="">豪雄第二件半价>></a></p>
+						</div>
+						<div class="f3-nav-2">
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+						</div>
+					</div>
+					<!--列图-->
+					<div class="f3-huowu-lei">
+						<!--第一列大图-->
+						<div class="f3-kuangone"></div>
+						<div class="f3-kuangtwo"></div>
+						<div class="f3-kuangtwo"></div>
+						<div class="f3-kuangtwo"></div>
+						<!--第二列轮播图-->
+						<div class="f3-kuangthree"></div>
+						<div class="f3-kuangfour"></div>
+						<div class="f3-kuangfour"></div>
+						<div class="f3-kuangfour"></div>
+					</div>
+				</div>
+			</div>
+			<!--夹图3.1-->
+			<div class="jiatu-3-1">
+				<ul class="jiatu-nav">
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href="" class="jiatu-nav-last"></a></li>
+					
+				</ul>
+			</div>
+			<!--夹图3.2-->
+			<div class="jiatu-3-2">
+				<a href=""></a>
+			</div>
+			<!--四楼-->
+			<div id="four-floor">
+				<p class="f4-biaoti"><span class="loubiao">4F</span><span class="biaoming">食品饮料</span></p>
+				<ul class="f4-floor-nav">
+					<a href=""><li>精选推荐</li></a>
+					<a href=""><li>休闲零食<span></span></li></a>
+					<a href=""><li>酒水饮料<span></span></li></a>
+					<a href=""><li>茶冲饮品<span></span></li></a>
+					<a href=""><li>粮油调味<span></span></li></a>
+					<a href=""><li>营养保健<span></span></li></a>
+				</ul>
+				<div class="f4-huowu">
+					<div class="f4-huowu-nav">
+						<div class="f4-nav-1">
+								<p><a href="">嘉顿满30元送嘉顿饼干>></a></p>
+								<p><a href="">豪雄第二件半价>></a></p>
+						</div>
+						<div class="f4-nav-2">
+							<div class="f4-nav-2-1">
+								<div class="f4-nav-2-1-1">
+									<p><a href="">嘉顿满30元送嘉顿饼干>></a></p>
+									<p><a href="">豪雄第二件半价>></a></p>
+								</div>
+								<div class="f4-nav-2-1-2">
+									<a href="">口香糖</a>
+									<a href="">口香糖</a>
+									<a href="">口香糖</a>
+									<a href="">口香糖</a>
+									<a href="">口香糖</a>
+									<a href="">口香糖</a>
+								</div>
+							</div>
+							<div class="f4-nav-2-2">
+								<div class="f4-nav-2-2-1">
+									<p><a href="">嘉顿满30元送嘉顿饼干>></a></p>
+									<p><a href="">豪雄第二件半价>></a></p>
+								</div>
+								<div class="f4-nav-2-2-2">
+									<a href="">口香糖</a>
+									<a href="">口香糖</a>
+									<a href="">口香糖</a>
+									<a href="">口香糖</a>
+									<a href="">口香糖</a>
+									<a href="">口香糖</a>
+								</div>
+							</div>	
+						</div>
+						<div class="f4-nav-photo"></div>
+					</div>
+					<!--列图-->
+					<div class="f4-huowu-lei">
+						<div class="f4-kuangtwo"></div>
+						<div class="f4-kuangtwo"></div>
+						<div class="f4-kuangtwo"></div>
+						<div class="f4-kuangtwo"></div>
+						<div class="f4-kuangtwo"></div>
+						<div class="f4-kuangtwo"></div>
+						<div class="f4-kuangtwo"></div>
+						<div class="f4-kuangtwo"></div>
+						<!--第三行大图-->
+						<div class="f4-kuangone"></div>
+						<div class="f4-kuangtwo"></div>
+						<div class="f4-kuangtwo"></div>
+					</div>
+				</div>
+			</div>
+			<!--夹图4.1-->
+			<div class="jiatu-4-1">
+				<ul class="jiatu-nav">
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href="" class="jiatu-nav-last"></a></li>
+					
+				</ul>
+			</div>
+			<!--夹图4.2-->
+			<div class="jiatu-4-2">
+				<a href=""></a>
+			</div>
+			<!--五楼-->
+			<div id="five-floor">
+				<p class="f5-biaoti"><span class="loubiao">5F</span><span class="biaoming">食品饮料</span></p>
+				<ul class="f5-floor-nav">
+					<a href=""><li>精选推荐</li></a>
+					<a href=""><li>休闲零食<span></span></li></a>
+					<a href=""><li>酒水饮料<span></span></li></a>
+					<a href=""><li>茶冲饮品<span></span></li></a>
+					<a href=""><li>粮油调味<span></span></li></a>
+					<a href=""><li>营养保健<span></span></li></a>
+				</ul>
+				<div class="f5-huowu">
+					<div class="f5-huowu-nav">
+						<div class="f5-nav-1">
+								<p><a href="">嘉顿满30元送嘉顿饼干>></a></p>
+								<p><a href="">豪雄第二件半价>></a></p>
+						</div>
+						<div class="f5-nav-2">
+							<div class="f5-nav-2-1">
+								<div class="f5-nav-2-1-1">
+									<p><a href="">嘉顿满30元送嘉顿饼干>></a></p>
+									<p><a href="">豪雄第二件半价>></a></p>
+								</div>
+								<div class="f5-nav-2-1-2">
+									<a href="">口香糖</a>
+									<a href="">口香糖</a>
+									<a href="">口香糖</a>
+									<a href="">口香糖</a>
+									<a href="">口香糖</a>
+									<a href="">口香糖</a>
+								</div>
+							</div>
+							<div class="f5-nav-2-2">
+								<div class="f5-nav-2-2-1">
+									<p><a href="">嘉顿满30元送嘉顿饼干>></a></p>
+									<p><a href="">豪雄第二件半价>></a></p>
+								</div>
+								<div class="f5-nav-2-2-2">
+									<a href="">口香糖</a>
+									<a href="">口香糖</a>
+									<a href="">口香糖</a>
+									<a href="">口香糖</a>
+									<a href="">口香糖</a>
+									<a href="">口香糖</a>
+								</div>
+							</div>	
+						</div>
+					</div>
+					<!--列图-->
+					<div class="f5-huowu-lei">
+						<!--第一行轮播图-->
+						<a href=""><div class="f5-kuangone"></div></a>
+						<!--第一行小图-->
+						<a href=""><div class="f5-kuangtwo"></div></a>
+						<a href=""><div class="f5-kuangtwo"></div></a>
+						<a href=""><div class="f5-kuangtwo"></div></a>
+						<a href=""><div class="f5-kuangtwo"></div></a>
+						<!--第二行大图-->
+				
+						<a href=""><div class="f5-kuangthree"></div></a>
+						<a href=""><div class="f5-kuangthree"></div></a>
+						<a href=""><div class="f5-kuangthree"></div></a>
+						<a href=""><div class="f5-kuangthree"></div></a>
+					</div>
+				</div>
+			</div>
+			<!--夹图5.1-->
+			<div class="jiatu-5-1">
+				<ul class="jiatu-nav">
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href="" class="jiatu-nav-last"></a></li>
+					
+				</ul>
+			</div>
+			<!--六楼-->
+			<div id="six-floor">
+				<p class="f6-biaoti"><span class="loubiao">6F</span><span class="biaoming">食品饮料</span></p>
+				<ul class="f6-floor-nav">
+					<a href=""><li>精选推荐</li></a>
+					<a href=""><li>休闲零食<span></span></li></a>
+					<a href=""><li>酒水饮料<span></span></li></a>
+					<a href=""><li>茶冲饮品<span></span></li></a>
+					<a href=""><li>粮油调味<span></span></li></a>
+					<a href=""><li>营养保健<span></span></li></a>
+				</ul>
+				<div class="f6-huowu">
+					<div class="f6-huowu-nav">
+						<div class="f6-nav-1">
+								<p><a href="">嘉顿满30元送嘉顿饼干>></a></p>
+								<p><a href="">豪雄第二件半价>></a></p>
+						</div>
+						<div class="f6-nav-2">
+							<div class="f6-nav-2-1">
+								<div class="f6-nav-2-1-1">
+									<p><a href="">嘉顿满30元送嘉顿饼干>></a></p>
+									<p><a href="">豪雄第二件半价>></a></p>
+								</div>
+								<div class="f6-nav-2-1-2">
+									<a href="">口香糖</a>
+									<a href="">口香糖</a>
+									<a href="">口香糖</a>
+									<a href="">口香糖</a>
+									<a href="">口香糖</a>
+									<a href="">口香糖</a>
+								</div>
+							</div>
+							<div class="f6-nav-2-2">
+								<div class="f6-nav-2-2-1">
+									<p><a href="">嘉顿满30元送嘉顿饼干>></a></p>
+									<p><a href="">豪雄第二件半价>></a></p>
+								</div>
+								<div class="f6-nav-2-2-2">
+									<a href="">口香糖</a>
+									<a href="">口香糖</a>
+									<a href="">口香糖</a>
+									<a href="">口香糖</a>
+									<a href="">口香糖</a>
+									<a href="">口香糖</a>
+								</div>
+							</div>	
+						</div>
+						<div class="f6-nav-photo"></div>
+					</div>
+					<!--列图-->
+					<div class="f6-huowu-lei">
+						<a href=""><div class="f6-kuangtwo"></div></a>
+						<a href=""><div class="f6-kuangtwo"></div></a>
+						<a href=""><div class="f6-kuangtwo"></div></a>
+						<a href=""><div class="f6-kuangtwo"></div></a>
+						<a href=""><div class="f6-kuangtwo"></div></a>
+						<a href=""><div class="f6-kuangtwo"></div></a>
+						<a href=""><div class="f6-kuangtwo"></div></a>
+						<a href=""><div class="f6-kuangtwo"></div></a>
+						<!--第三行大图-->
+						<a href=""><div class="f6-kuangone"></div></a>
+						<a href=""><div class="f6-kuangtwo"></div></a>
+						<a href=""><div class="f6-kuangtwo"></div></a>
+					</div>
+				</div>
+			</div>
+			<!--夹图6.1-->
+			<div class="jiatu-6-1">
+				<ul class="jiatu-nav">
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href="" class="jiatu-nav-last"></a></li>
+					
+				</ul>
+			</div>
+			<!--七楼-->
+			<div id="seven-floor">
+				<p class="f7-biaoti"><span class="loubiao">7F</span><span class="biaoming">食品饮料</span></p>
+				 
+				<ul class="f7-floor-nav">
+					<a href=""><li>精选推荐</li></a>
+					<a href=""><li>休闲零食<span></span></li></a>
+					<a href=""><li>酒水饮料<span></span></li></a>
+					<a href=""><li>茶冲饮品<span></span></li></a>
+					<a href=""><li>粮油调味<span></span></li></a>
+					<a href=""><li>营养保健<span></span></li></a>
+				</ul>
+				<div class="f7-huowu">
+					<div class="f7-huowu-nav">
+						<div class="f7-nav-1">
+							<p><a href="">嘉顿满30元送嘉顿饼干>></a></p>
+							<p><a href="">豪雄第二件半价>></a></p>
+						</div>
+						<div class="f7-nav-2">
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+						</div>
+					</div>
+					<div class="f7-huowu-lei">
+						<a href=""><div class="f7-kuangtwo"></div></a>
+						<!--第一行大图-->
+						<a href=""><div class="f7-kuangone"></div></a>
+						<a href=""><div class="f7-kuangtwo"></div></a>
+						<a href=""><div class="f7-kuangtwo"></div></a>
+						<a href=""><div class="f7-kuangfour"></div></a>
+						<a href=""><div class="f7-kuangfour"></div></a>
+						<a href=""><div class="f7-kuangfour"></div></a>
+						<a href=""><div class="f7-kuangfour"></div></a>
+						<a href=""><div class="f7-kuangfour"></div></a>
+					</div>
+				</div>
+			</div>
+			<!--夹图7.1-->
+			<div class="jiatu-7">
+				<ul class="jiatu-nav">
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href="" class="jiatu-nav-last"></a></li>
+					
+				</ul>
+			</div>
+			<!--八楼-->
+			<div id="eight-floor">
+				<p class="f8-biaoti"><span class="loubiao">8F</span><span class="biaoming">食品饮料</span></p>
+				 
+				<ul class="f8-floor-nav">
+					<a href=""><li>精选推荐</li></a>
+					<a href=""><li>休闲零食<span></span></li></a>
+					<a href=""><li>酒水饮料<span></span></li></a>
+					<a href=""><li>茶冲饮品<span></span></li></a>
+					<a href=""><li>粮油调味<span></span></li></a>
+					<a href=""><li>营养保健<span></span></li></a>
+				</ul>
+				<div class="f8-huowu">
+					<div class="f8-huowu-nav">
+						<div class="f8-nav-1">
+							<p><a href="">嘉顿满30元送嘉顿饼干>></a></p>
+							<p><a href="">豪雄第二件半价>></a></p>
+						</div>
+						<div class="f8-nav-2">
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+						</div>
+					</div>
+					<div class="f8-huowu-lei">
+						<a href=""><div class="f8-kuangtwo"></div></a>
+						<!--第一行大图-->
+						<a href=""><div class="f8-kuangone"></div></a>
+						<a href=""><div class="f8-kuangtwo"></div></a>
+						<a href=""><div class="f8-kuangtwo"></div></a>
+						<a href=""><div class="f8-kuangfour"></div></a>
+						<a href=""><div class="f8-kuangfour"></div></a>
+						<a href=""><div class="f8-kuangfour"></div></a>
+						<a href=""><div class="f8-kuangfour"></div></a>
+						<a href=""><div class="f8-kuangfour"></div></a>
+					</div>
+				</div>
+			</div>
+			<!--夹图8.1-->
+			<div class="jiatu-8">
+				<ul class="jiatu-nav">
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href="" class="jiatu-nav-last"></a></li>
+					
+				</ul>
+			</div>
+			<!--九楼-->
+			<div id="nine-floor">
+				<p class="f9-biaoti"><span class="loubiao">9F</span><span class="biaoming">食品饮料</span></p>
+				 
+				<ul class="f9-floor-nav">
+					<a href=""><li>精选推荐</li></a>
+					<a href=""><li>休闲零食<span></span></li></a>
+					<a href=""><li>酒水饮料<span></span></li></a>
+					<a href=""><li>茶冲饮品<span></span></li></a>
+					<a href=""><li>粮油调味<span></span></li></a>
+					<a href=""><li>营养保健<span></span></li></a>
+				</ul>
+				<div class="f9-huowu">
+					<div class="f9-huowu-nav">
+						<div class="f9-nav-1">
+							<p><a href="">嘉顿满30元送嘉顿饼干>></a></p>
+							<p><a href="">豪雄第二件半价>></a></p>
+						</div>
+						<div class="f9-nav-2">
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+						</div>
+					</div>
+					<div class="f9-huowu-lei">
+						<a href=""><div class="f9-kuangtwo"></div></a>
+						<!--第一行大图-->
+						<a href=""><div class="f9-kuangone"></div></a>
+						<a href=""><div class="f9-kuangtwo"></div></a>
+						<a href=""><div class="f9-kuangtwo"></div></a>
+						<a href=""><div class="f9-kuangfour"></div></a>
+						<a href=""><div class="f9-kuangfour"></div></a>
+						<a href=""><div class="f9-kuangfour"></div></a>
+						<a href=""><div class="f9-kuangfour"></div></a>
+						<a href=""><div class="f9-kuangfour"></div></a>
+					</div>
+				</div>
+			</div>
+			<!--夹图9.1-->
+			<div class="jiatu-9">
+				<ul class="jiatu-nav">
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href="" class="jiatu-nav-last"></a></li>
+					
+				</ul>
+			</div>
+			<!--十楼-->
+			<div id="ten-floor">
+				<p class="f10-biaoti"><span class="loubiao">10F</span><span class="biaoming">食品饮料</span></p>
+				 
+				<ul class="f10-floor-nav">
+					<a href=""><li>精选推荐</li></a>
+					<a href=""><li>休闲零食<span></span></li></a>
+					<a href=""><li>酒水饮料<span></span></li></a>
+					<a href=""><li>茶冲饮品<span></span></li></a>
+					<a href=""><li>粮油调味<span></span></li></a>
+					<a href=""><li>营养保健<span></span></li></a>
+				</ul>
+				<div class="f10-huowu">
+					<div class="f10-huowu-nav">
+						<div class="f10-nav-1">
+							<p><a href="">嘉顿满30元送嘉顿饼干>></a></p>
+							<p><a href="">豪雄第二件半价>></a></p>
+						</div>
+						<div class="f10-nav-2">
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+						</div>
+					</div>
+					<div class="f10-huowu-lei">
+						<a href=""><div class="f10-kuangtwo"></div></a>
+						<!--第一行大图-->
+						<a href=""><div class="f10-kuangone"></div></a>
+						<a href=""><div class="f10-kuangtwo"></div></a>
+						<a href=""><div class="f10-kuangtwo"></div></a>
+						<a href=""><div class="f10-kuangfour"></div></a>
+						<a href=""><div class="f10-kuangfour"></div></a>
+						<a href=""><div class="f10-kuangfour"></div></a>
+						<a href=""><div class="f10-kuangfour"></div></a>
+						<a href=""><div class="f10-kuangfour"></div></a>
+					</div>
+				</div>
+			</div>
+			<!--夹图10.1-->
+			<div class="jiatu-10">
+				<ul class="jiatu-nav">
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href="" class="jiatu-nav-last"></a></li>
+					
+				</ul>
+			</div>
+			<!--十一楼-->
+			<div id="eleven-floor">
+				<p class="f11-biaoti"><span class="loubiao">11F</span><span class="biaoming">食品饮料</span></p>
+				 
+				<ul class="f11-floor-nav">
+					<a href=""><li>精选推荐</li></a>
+					<a href=""><li>休闲零食<span></span></li></a>
+					<a href=""><li>酒水饮料<span></span></li></a>
+					<a href=""><li>茶冲饮品<span></span></li></a>
+					<a href=""><li>粮油调味<span></span></li></a>
+					<a href=""><li>营养保健<span></span></li></a>
+				</ul>
+				<div class="f11-huowu">
+					<div class="f11-huowu-nav">
+						<div class="f11-nav-1">
+							<p><a href="">嘉顿满30元送嘉顿饼干>></a></p>
+							<p><a href="">豪雄第二件半价>></a></p>
+						</div>
+						<div class="f11-nav-2">
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+								<a href="">口香糖</a>
+						</div>
+					</div>
+					<div class="f11-huowu-lei">
+						<a href=""><div class="f11-kuangtwo"></div></a>
+						<!--第一行大图-->
+						<a href=""><div class="f11-kuangone"></div></a>
+						<a href=""><div class="f11-kuangtwo"></div></a>
+						<a href=""><div class="f11-kuangtwo"></div></a>
+						<a href=""><div class="f11-kuangfour"></div></a>
+						<a href=""><div class="f11-kuangfour"></div></a>
+						<a href=""><div class="f11-kuangfour"></div></a>
+						<a href=""><div class="f11-kuangfour"></div></a>
+						<a href=""><div class="f11-kuangfour"></div></a>
+					</div>
+				</div>
+			</div>
+			<!--夹图11.1-->
+			<div class="jiatu-11">
+				<ul class="jiatu-nav">
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href=""></a><span class="jiatu-xian"></span></li>
+					<li><a href="" class="jiatu-nav-last"></a></li>
+					
+				</ul>
+			</div>
+			<div id="kongbai"></div>
 		</section>
 		<!--未加载的标签-->
-		<article></article>
+		<article>
+			<a href=""></a>
+		</article>
 		<!--功能-->
-		<div id="gongneng"></div>
+		<div id="gongneng">
+			
+		</div>
 		<!--配送售后-->
 		<div id="fuwu"></div>
 		<!--底部信息-->

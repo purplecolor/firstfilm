@@ -1,4 +1,4 @@
-body, p {
+body, p, section {
   margin: 0;
   padding: 0; }
 
@@ -214,7 +214,11 @@ header {
         font-size: 14px; }
     #banner-wrap #banner #lunbo {
       width: 800px;
-      height: 454px; }
+      height: 454px;
+      overflow: hidden; }
+      #banner-wrap #banner #lunbo li {
+        float: left;
+        width: 800px; }
     #banner-wrap #banner #kefu {
       width: 180px;
       height: 414px;
@@ -291,16 +295,23 @@ header {
   margin-bottom: 25px; }
 
 section {
-  height: 7733px;
-  background: red;
+  height: 7734px;
   margin-bottom: 30px; }
   section #one-floor {
+    height: 524px;
     margin-bottom: 10px; }
     section #one-floor .biaoti {
+      height: 35px;
       float: left;
       width: 465px;
-      border-bottom: 1px solid red; }
-      section #one-floor .biaoti span {
+      border-bottom: 1px solid red;
+      position: relative; }
+      section #one-floor .biaoti .biaoming {
+        position: absolute;
+        left: 40px; }
+      section #one-floor .biaoti .loubiao {
+        position: absolute;
+        top: 10px;
         line-height: 25px;
         text-align: center;
         float: left;
@@ -330,6 +341,7 @@ section {
           background: #CECECE;
           margin-top: 15px; }
     section #one-floor .huowu {
+      float: left;
       width: 1190px;
       height: 488px; }
       section #one-floor .huowu .huowu-nav {
@@ -394,7 +406,8 @@ section {
           border-bottom: 1px solid #cecece; }
   section .jiatu-1 {
     width: 1190px;
-    height: 61px; }
+    height: 61px;
+    margin-bottom: 25px; }
     section .jiatu-1 .jiatu-nav li {
       float: left;
       padding: 10px 0; }
@@ -415,60 +428,70 @@ section {
       section .jiatu-1 .jiatu-nav li .jiatu-nav-last {
         margin: 0; }
   section #two-floor {
-    margin-bottom: 10px; }
-    section #two-floor .biaoti {
+    margin-bottom: 10px;
+    height: 524px; }
+    section #two-floor .f2-biaoti {
+      height: 35px;
       float: left;
       width: 465px;
-      border-bottom: 1px solid red; }
-      section #two-floor .biaoti span {
+      border-bottom: 1px solid red;
+      position: relative; }
+      section #two-floor .f2-biaoti .biaoming {
+        display: block;
+        position: absolute;
+        left: 40px; }
+      section #two-floor .f2-biaoti .loubiao {
         line-height: 25px;
         text-align: center;
         float: left;
         background: url(../img/jinglingtu2.png) -124px -94px no-repeat;
         width: 30px;
         height: 25px;
+        position: absolute;
+        top: 5px;
         margin-right: 10px; }
-    section #two-floor .floor-nav {
+    section #two-floor .f2-floor-nav {
       float: left;
       width: 723px;
       height: 35px;
       border: 1px solid #CECECE;
       border-bottom: 1px solid red; }
-      section #two-floor .floor-nav a {
+      section #two-floor .f2-floor-nav a {
         color: black; }
-      section #two-floor .floor-nav li {
+      section #two-floor .f2-floor-nav li {
         float: left;
         width: 119px;
         height: 35px;
         text-align: center;
         line-height: 35px; }
-        section #two-floor .floor-nav li span {
+        section #two-floor .f2-floor-nav li span {
           float: left;
           display: block;
           width: 2px;
           height: 10px;
           background: #CECECE;
           margin-top: 15px; }
-    section #two-floor .huowu {
+    section #two-floor .f2-huowu {
+      float: left;
       width: 1190px;
       height: 488px; }
-      section #two-floor .huowu .huowu-nav {
+      section #two-floor .f2-huowu .f2-huowu-nav {
         width: 190px;
         height: 488px;
         float: left;
         background: url(../img/jiangyou.jpg);
         position: relative; }
-        section #two-floor .huowu .huowu-nav .nav-1 {
+        section #two-floor .f2-huowu .f2-huowu-nav .f2-nav-1 {
           width: 190px;
           height: 62px;
           position: absolute;
           top: 244px;
           background: #ffe7d5; }
-          section #two-floor .huowu .huowu-nav .nav-1 a {
+          section #two-floor .f2-huowu .f2-huowu-nav .f2-nav-1 a {
             color: black;
             line-height: 18px;
             font-size: 12px; }
-        section #two-floor .huowu .huowu-nav .nav-2 {
+        section #two-floor .f2-huowu .f2-huowu-nav .f2-nav-2 {
           align-content: flex-start;
           width: 170px;
           height: 162px;
@@ -479,13 +502,13 @@ section {
           justify-content: flex-start;
           padding: 10px;
           background: #fff0e5; }
-          section #two-floor .huowu .huowu-nav .nav-2 a {
+          section #two-floor .f2-huowu .f2-huowu-nav .f2-nav-2 a {
             display: block;
             font-size: 12px;
             color: black;
             margin-right: 10px;
             line-height: 25px; }
-      section #two-floor .huowu .huowu-lei {
+      section #two-floor .f2-huowu .f2-huowu-lei {
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
@@ -494,33 +517,1321 @@ section {
         height: 488px;
         float: left;
         background: green; }
-        section #two-floor .huowu .huowu-lei .kuangone {
+        section #two-floor .f2-huowu .f2-huowu-lei .f2-kuangone {
+          width: 399px;
+          height: 243px;
+          border-bottom: 1px solid #CECECE;
+          border-left: 1px solid #cecece; }
+        section #two-floor .f2-huowu .f2-huowu-lei .f2-kuangtwo {
+          width: 199px;
+          height: 243px;
+          border-left: 1px solid #cecece;
+          border-bottom: 1px solid #cecece; }
+        section #two-floor .f2-huowu .f2-huowu-lei .f2-kuangfour {
+          width: 199px;
+          height: 243px;
+          border-left: 1px solid #cecece;
+          border-bottom: 1px solid #cecece; }
+  section .jiatu-2 {
+    width: 1190px;
+    height: 61px;
+    margin-bottom: 25px; }
+    section .jiatu-2 .jiatu-nav li {
+      float: left;
+      padding: 10px 0; }
+      section .jiatu-2 .jiatu-nav li a {
+        float: left;
+        display: block;
+        width: 100px;
+        height: 30px;
+        background: url(../img/yanghejiuchang.jpg);
+        margin: 0 10px; }
+      section .jiatu-2 .jiatu-nav li .jiatu-xian {
+        float: left;
+        display: block;
+        width: 1px;
+        height: 20px;
+        background: #CECECE;
+        margin-top: 5px; }
+      section .jiatu-2 .jiatu-nav li .jiatu-nav-last {
+        margin: 0; }
+  section .jiatu-2-2 {
+    width: 1190px;
+    height: 100px;
+    margin-bottom: 25px; }
+    section .jiatu-2-2 a {
+      display: block;
+      width: 1190px;
+      height: 100px;
+      background: url(../img/wenqingnuanju.jpg); }
+  section #three-floor {
+    height: 524px;
+    margin-bottom: 10px; }
+    section #three-floor .f3-biaoti {
+      height: 35px;
+      float: left;
+      width: 465px;
+      border-bottom: 1px solid red;
+      position: relative; }
+      section #three-floor .f3-biaoti .biaoming {
+        display: block;
+        position: absolute;
+        left: 40px; }
+      section #three-floor .f3-biaoti .loubiao {
+        line-height: 25px;
+        text-align: center;
+        float: left;
+        background: url(../img/jinglingtu2.png) -124px -94px no-repeat;
+        width: 30px;
+        height: 25px;
+        position: absolute;
+        top: 5px;
+        margin-right: 10px; }
+    section #three-floor .f3-floor-nav {
+      float: left;
+      width: 723px;
+      height: 35px;
+      border: 1px solid #CECECE;
+      border-bottom: 1px solid red; }
+      section #three-floor .f3-floor-nav a {
+        color: black; }
+      section #three-floor .f3-floor-nav li {
+        float: left;
+        width: 119px;
+        height: 35px;
+        text-align: center;
+        line-height: 35px; }
+        section #three-floor .f3-floor-nav li span {
+          float: left;
+          display: block;
+          width: 2px;
+          height: 10px;
+          background: #CECECE;
+          margin-top: 15px; }
+    section #three-floor .f3-huowu {
+      float: left;
+      width: 1190px;
+      height: 488px; }
+      section #three-floor .f3-huowu .f3-huowu-nav {
+        width: 190px;
+        height: 488px;
+        float: left;
+        background: url(../img/jiangyou.jpg);
+        position: relative; }
+        section #three-floor .f3-huowu .f3-huowu-nav .f3-nav-1 {
+          width: 190px;
+          height: 62px;
+          position: absolute;
+          top: 244px;
+          background: #ffe7d5; }
+          section #three-floor .f3-huowu .f3-huowu-nav .f3-nav-1 a {
+            color: black;
+            line-height: 18px;
+            font-size: 12px; }
+        section #three-floor .f3-huowu .f3-huowu-nav .f3-nav-2 {
+          align-content: flex-start;
+          width: 170px;
+          height: 162px;
+          position: absolute;
+          top: 306px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          padding: 10px;
+          background: #fff0e5; }
+          section #three-floor .f3-huowu .f3-huowu-nav .f3-nav-2 a {
+            display: block;
+            font-size: 12px;
+            color: black;
+            margin-right: 10px;
+            line-height: 25px; }
+      section #three-floor .f3-huowu .f3-huowu-lei {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        width: 1000px;
+        height: 488px;
+        float: left;
+        background: green; }
+        section #three-floor .f3-huowu .f3-huowu-lei .f3-kuangone {
           width: 399px;
           height: 316px;
           border-bottom: 1px solid #CECECE; }
-        section #two-floor .huowu .huowu-lei .kuangtwo {
+        section #three-floor .f3-huowu .f3-huowu-lei .f3-kuangtwo {
           width: 199px;
           height: 316px;
           border-left: 1px solid #cecece;
           border-bottom: 1px solid #cecece; }
-        section #two-floor .huowu .huowu-lei .kuangthree {
+        section #three-floor .f3-huowu .f3-huowu-lei .f3-kuangthree {
           width: 399px;
           height: 170px;
           border-bottom: 1px solid #CECECE; }
-        section #two-floor .huowu .huowu-lei .kuangfour {
+        section #three-floor .f3-huowu .f3-huowu-lei .f3-kuangfour {
           width: 199px;
           height: 170px;
           border-left: 1px solid #cecece;
           border-bottom: 1px solid #cecece; }
+  section .jiatu-3-1 {
+    width: 1190px;
+    height: 61px;
+    margin-bottom: 25px; }
+    section .jiatu-3-1 .jiatu-nav li {
+      float: left;
+      padding: 10px 0; }
+      section .jiatu-3-1 .jiatu-nav li a {
+        float: left;
+        display: block;
+        width: 100px;
+        height: 30px;
+        background: url(../img/yanghejiuchang.jpg);
+        margin: 0 10px; }
+      section .jiatu-3-1 .jiatu-nav li .jiatu-xian {
+        float: left;
+        display: block;
+        width: 1px;
+        height: 20px;
+        background: #CECECE;
+        margin-top: 5px; }
+      section .jiatu-3-1 .jiatu-nav li .jiatu-nav-last {
+        margin: 0; }
+  section .jiatu-3-2 {
+    width: 1190px;
+    height: 100px;
+    margin-bottom: 25px; }
+    section .jiatu-3-2 a {
+      display: block;
+      width: 1190px;
+      height: 100px;
+      background: url(../img/wenqingnuanju.jpg); }
+  section #four-floor {
+    margin-bottom: 10px; }
+    section #four-floor .f4-biaoti {
+      float: left;
+      width: 465px;
+      border-bottom: 1px solid red;
+      position: relative; }
+      section #four-floor .f4-biaoti .biaoming {
+        display: block;
+        position: absolute;
+        left: 40px; }
+      section #four-floor .f4-biaoti .loubiao {
+        line-height: 25px;
+        text-align: center;
+        float: left;
+        background: url(../img/jinglingtu2.png) -124px -94px no-repeat;
+        width: 30px;
+        height: 25px;
+        position: absolute;
+        top: 5px;
+        margin-right: 10px; }
+    section #four-floor .f4-floor-nav {
+      float: left;
+      width: 723px;
+      height: 35px;
+      border: 1px solid #CECECE;
+      border-bottom: 1px solid red; }
+      section #four-floor .f4-floor-nav a {
+        color: black; }
+      section #four-floor .f4-floor-nav li {
+        float: left;
+        width: 119px;
+        height: 35px;
+        text-align: center;
+        line-height: 35px; }
+        section #four-floor .f4-floor-nav li span {
+          float: left;
+          display: block;
+          width: 2px;
+          height: 10px;
+          background: #CECECE;
+          margin-top: 15px; }
+    section #four-floor .f4-huowu {
+      width: 1190px;
+      height: 768px; }
+      section #four-floor .f4-huowu .f4-huowu-nav {
+        width: 390px;
+        height: 490px;
+        float: left;
+        background: url(../img/dongzhuangremai.jpg);
+        position: relative; }
+        section #four-floor .f4-huowu .f4-huowu-nav .f4-nav-1 {
+          width: 370px;
+          height: 52px;
+          padding: 10px;
+          position: absolute;
+          top: 244px;
+          background: #ffe7d5; }
+          section #four-floor .f4-huowu .f4-huowu-nav .f4-nav-1 a {
+            color: black;
+            line-height: 18px;
+            font-size: 12px; }
+        section #four-floor .f4-huowu .f4-huowu-nav .f4-nav-2 {
+          align-content: flex-start;
+          width: 390px;
+          height: 178px;
+          position: absolute;
+          top: 316px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          background: #fff0e5; }
+          section #four-floor .f4-huowu .f4-huowu-nav .f4-nav-2 .f4-nav-2-1 {
+            width: 175px;
+            height: 178px;
+            position: absolute;
+            top: 0; }
+            section #four-floor .f4-huowu .f4-huowu-nav .f4-nav-2 .f4-nav-2-1 .f4-nav-2-1-1 {
+              padding: 10px; }
+            section #four-floor .f4-huowu .f4-huowu-nav .f4-nav-2 .f4-nav-2-1 .f4-nav-2-1-2 {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: flex-start;
+              padding: 10px; }
+          section #four-floor .f4-huowu .f4-huowu-nav .f4-nav-2 .f4-nav-2-2 {
+            width: 175px;
+            height: 178px;
+            position: absolute;
+            top: 0;
+            left: 185px; }
+            section #four-floor .f4-huowu .f4-huowu-nav .f4-nav-2 .f4-nav-2-2 .f4-nav-2-2-1 {
+              padding: 10px; }
+            section #four-floor .f4-huowu .f4-huowu-nav .f4-nav-2 .f4-nav-2-2 .f4-nav-2-2-2 {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: flex-start;
+              padding: 10px; }
+          section #four-floor .f4-huowu .f4-huowu-nav .f4-nav-2 a {
+            display: block;
+            font-size: 12px;
+            color: black;
+            margin-right: 10px;
+            line-height: 25px; }
+        section #four-floor .f4-huowu .f4-huowu-nav .f4-nav-photo {
+          width: 390px;
+          height: 243px;
+          background: url(../dist/img/tongzhuangkuanian.jpg);
+          position: absolute;
+          top: 490px; }
+      section #four-floor .f4-huowu .f4-huowu-lei {
+        float: right;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        width: 800px;
+        height: 733px;
+        float: left;
+        background: green; }
+        section #four-floor .f4-huowu .f4-huowu-lei .f4-kuangone {
+          width: 399px;
+          height: 243px;
+          border-bottom: 1px solid #CECECE;
+          border-left: 1px solid #cecece; }
+        section #four-floor .f4-huowu .f4-huowu-lei .f4-kuangtwo {
+          width: 199px;
+          height: 243px;
+          border-left: 1px solid #cecece;
+          border-bottom: 1px solid #cecece; }
+  section .jiatu-4-1 {
+    width: 1190px;
+    height: 61px;
+    margin-bottom: 25px; }
+    section .jiatu-4-1 .jiatu-nav li {
+      float: left;
+      padding: 10px 0; }
+      section .jiatu-4-1 .jiatu-nav li a {
+        float: left;
+        display: block;
+        width: 100px;
+        height: 30px;
+        background: url(../img/yanghejiuchang.jpg);
+        margin: 0 10px; }
+      section .jiatu-4-1 .jiatu-nav li .jiatu-xian {
+        float: left;
+        display: block;
+        width: 1px;
+        height: 20px;
+        background: #CECECE;
+        margin-top: 5px; }
+      section .jiatu-4-1 .jiatu-nav li .jiatu-nav-last {
+        margin: 0; }
+  section .jiatu-4-2 {
+    width: 1190px;
+    height: 100px;
+    margin-bottom: 25px; }
+    section .jiatu-4-2 a {
+      display: block;
+      width: 1190px;
+      height: 100px;
+      background: url(../img/wenqingnuanju.jpg); }
+  section #five-floor {
+    margin-bottom: 10px; }
+    section #five-floor .f5-biaoti {
+      float: left;
+      width: 465px;
+      border-bottom: 1px solid red;
+      position: relative; }
+      section #five-floor .f5-biaoti .biaoming {
+        display: block;
+        position: absolute;
+        left: 40px; }
+      section #five-floor .f5-biaoti .loubiao {
+        line-height: 25px;
+        text-align: center;
+        float: left;
+        background: url(../img/jinglingtu2.png) -124px -94px no-repeat;
+        width: 30px;
+        height: 25px;
+        position: absolute;
+        top: 5px;
+        margin-right: 10px; }
+    section #five-floor .f5-floor-nav {
+      float: left;
+      width: 723px;
+      height: 35px;
+      border: 1px solid #CECECE;
+      border-bottom: 1px solid red; }
+      section #five-floor .f5-floor-nav a {
+        color: black; }
+      section #five-floor .f5-floor-nav li {
+        float: left;
+        width: 119px;
+        height: 35px;
+        text-align: center;
+        line-height: 35px; }
+        section #five-floor .f5-floor-nav li span {
+          float: left;
+          display: block;
+          width: 2px;
+          height: 10px;
+          background: #CECECE;
+          margin-top: 15px; }
+    section #five-floor .f5-huowu {
+      width: 1190px;
+      height: 524px; }
+      section #five-floor .f5-huowu .f5-huowu-nav {
+        width: 390px;
+        height: 488px;
+        float: left;
+        background: url(../img/dongzhuangremai.jpg);
+        position: relative; }
+        section #five-floor .f5-huowu .f5-huowu-nav .f5-nav-1 {
+          width: 370px;
+          height: 52px;
+          padding: 10px;
+          position: absolute;
+          top: 244px;
+          background: #ffe7d5; }
+          section #five-floor .f5-huowu .f5-huowu-nav .f5-nav-1 a {
+            color: black;
+            line-height: 18px;
+            font-size: 12px; }
+        section #five-floor .f5-huowu .f5-huowu-nav .f5-nav-2 {
+          align-content: flex-start;
+          width: 390px;
+          height: 170px;
+          position: absolute;
+          top: 316px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          background: #fff0e5; }
+          section #five-floor .f5-huowu .f5-huowu-nav .f5-nav-2 .f5-nav-2-1 {
+            width: 175px;
+            height: 178px;
+            position: absolute;
+            top: 0; }
+            section #five-floor .f5-huowu .f5-huowu-nav .f5-nav-2 .f5-nav-2-1 .f5-nav-2-1-1 {
+              padding: 10px; }
+            section #five-floor .f5-huowu .f5-huowu-nav .f5-nav-2 .f5-nav-2-1 .f5-nav-2-1-2 {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: flex-start;
+              padding: 10px; }
+          section #five-floor .f5-huowu .f5-huowu-nav .f5-nav-2 .f5-nav-2-2 {
+            width: 175px;
+            height: 178px;
+            position: absolute;
+            top: 0;
+            left: 185px; }
+            section #five-floor .f5-huowu .f5-huowu-nav .f5-nav-2 .f5-nav-2-2 .f5-nav-2-2-1 {
+              padding: 10px; }
+            section #five-floor .f5-huowu .f5-huowu-nav .f5-nav-2 .f5-nav-2-2 .f5-nav-2-2-2 {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: flex-start;
+              padding: 10px; }
+          section #five-floor .f5-huowu .f5-huowu-nav .f5-nav-2 a {
+            display: block;
+            font-size: 12px;
+            color: black;
+            margin-right: 10px;
+            line-height: 25px; }
+        section #five-floor .f5-huowu .f5-huowu-nav .f5-nav-photo {
+          width: 390px;
+          height: 243px;
+          background: url(../dist/img/tongzhuangkuanian.jpg);
+          position: absolute;
+          top: 490px; }
+      section #five-floor .f5-huowu .f5-huowu-lei {
+        float: right;
+        width: 800px;
+        height: 488px;
+        float: left;
+        background: green; }
+        section #five-floor .f5-huowu .f5-huowu-lei .f5-kuangone {
+          width: 399px;
+          height: 243px;
+          float: left;
+          border-bottom: 1px solid #CECECE;
+          border-left: 1px solid #cecece; }
+        section #five-floor .f5-huowu .f5-huowu-lei .f5-kuangtwo {
+          width: 199px;
+          height: 121px;
+          float: left;
+          border-left: 1px solid #cecece;
+          border-bottom: 1px solid #cecece; }
+        section #five-floor .f5-huowu .f5-huowu-lei .f5-kuangthree {
+          width: 199px;
+          height: 243px;
+          float: left;
+          border-left: 1px solid #cecece;
+          border-bottom: 1px solid #cecece; }
+  section .jiatu-5-1 {
+    width: 1190px;
+    height: 61px;
+    margin-bottom: 25px; }
+    section .jiatu-5-1 .jiatu-nav li {
+      float: left;
+      padding: 10px 0; }
+      section .jiatu-5-1 .jiatu-nav li a {
+        float: left;
+        display: block;
+        width: 100px;
+        height: 30px;
+        background: url(../img/yanghejiuchang.jpg);
+        margin: 0 10px; }
+      section .jiatu-5-1 .jiatu-nav li .jiatu-xian {
+        float: left;
+        display: block;
+        width: 1px;
+        height: 20px;
+        background: #CECECE;
+        margin-top: 5px; }
+      section .jiatu-5-1 .jiatu-nav li .jiatu-nav-last {
+        margin: 0; }
+  section #six-floor {
+    margin-bottom: 10px; }
+    section #six-floor .f6-biaoti {
+      float: left;
+      width: 465px;
+      border-bottom: 1px solid red;
+      position: relative; }
+      section #six-floor .f6-biaoti .biaoming {
+        display: block;
+        position: absolute;
+        left: 40px; }
+      section #six-floor .f6-biaoti .loubiao {
+        line-height: 25px;
+        text-align: center;
+        float: left;
+        background: url(../img/jinglingtu2.png) -124px -94px no-repeat;
+        width: 30px;
+        height: 25px;
+        position: absolute;
+        top: 5px;
+        margin-right: 10px; }
+    section #six-floor .f6-floor-nav {
+      float: left;
+      width: 723px;
+      height: 35px;
+      border: 1px solid #CECECE;
+      border-bottom: 1px solid red; }
+      section #six-floor .f6-floor-nav a {
+        color: black; }
+      section #six-floor .f6-floor-nav li {
+        float: left;
+        width: 119px;
+        height: 35px;
+        text-align: center;
+        line-height: 35px; }
+        section #six-floor .f6-floor-nav li span {
+          float: left;
+          display: block;
+          width: 2px;
+          height: 10px;
+          background: #CECECE;
+          margin-top: 15px; }
+    section #six-floor .f6-huowu {
+      width: 1190px;
+      height: 768px; }
+      section #six-floor .f6-huowu .f6-huowu-nav {
+        width: 390px;
+        height: 490px;
+        float: left;
+        background: url(../img/dongzhuangremai.jpg);
+        position: relative; }
+        section #six-floor .f6-huowu .f6-huowu-nav .f6-nav-1 {
+          width: 370px;
+          height: 52px;
+          padding: 10px;
+          position: absolute;
+          top: 244px;
+          background: #ffe7d5; }
+          section #six-floor .f6-huowu .f6-huowu-nav .f6-nav-1 a {
+            color: black;
+            line-height: 18px;
+            font-size: 12px; }
+        section #six-floor .f6-huowu .f6-huowu-nav .f6-nav-2 {
+          align-content: flex-start;
+          width: 390px;
+          height: 178px;
+          position: absolute;
+          top: 316px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          background: #fff0e5; }
+          section #six-floor .f6-huowu .f6-huowu-nav .f6-nav-2 .f6-nav-2-1 {
+            width: 175px;
+            height: 178px;
+            position: absolute;
+            top: 0; }
+            section #six-floor .f6-huowu .f6-huowu-nav .f6-nav-2 .f6-nav-2-1 .f6-nav-2-1-1 {
+              padding: 10px; }
+            section #six-floor .f6-huowu .f6-huowu-nav .f6-nav-2 .f6-nav-2-1 .f6-nav-2-1-2 {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: flex-start;
+              padding: 10px; }
+          section #six-floor .f6-huowu .f6-huowu-nav .f6-nav-2 .f6-nav-2-2 {
+            width: 175px;
+            height: 178px;
+            position: absolute;
+            top: 0;
+            left: 185px; }
+            section #six-floor .f6-huowu .f6-huowu-nav .f6-nav-2 .f6-nav-2-2 .f6-nav-2-2-1 {
+              padding: 10px; }
+            section #six-floor .f6-huowu .f6-huowu-nav .f6-nav-2 .f6-nav-2-2 .f6-nav-2-2-2 {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: flex-start;
+              padding: 10px; }
+          section #six-floor .f6-huowu .f6-huowu-nav .f6-nav-2 a {
+            display: block;
+            font-size: 12px;
+            color: black;
+            margin-right: 10px;
+            line-height: 25px; }
+        section #six-floor .f6-huowu .f6-huowu-nav .f6-nav-photo {
+          width: 390px;
+          height: 243px;
+          background: url(../dist/img/tongzhuangkuanian.jpg);
+          position: absolute;
+          top: 490px; }
+      section #six-floor .f6-huowu .f6-huowu-lei {
+        float: right;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        width: 800px;
+        height: 733px;
+        float: left;
+        background: green; }
+        section #six-floor .f6-huowu .f6-huowu-lei .f6-kuangone {
+          width: 399px;
+          height: 243px;
+          border-bottom: 1px solid #CECECE;
+          border-left: 1px solid #cecece; }
+        section #six-floor .f6-huowu .f6-huowu-lei .f6-kuangtwo {
+          width: 199px;
+          height: 243px;
+          border-left: 1px solid #cecece;
+          border-bottom: 1px solid #cecece; }
+  section .jiatu-6-1 {
+    width: 1190px;
+    height: 61px;
+    margin-bottom: 25px; }
+    section .jiatu-6-1 .jiatu-nav li {
+      float: left;
+      padding: 10px 0; }
+      section .jiatu-6-1 .jiatu-nav li a {
+        float: left;
+        display: block;
+        width: 100px;
+        height: 30px;
+        background: url(../img/yanghejiuchang.jpg);
+        margin: 0 10px; }
+      section .jiatu-6-1 .jiatu-nav li .jiatu-xian {
+        float: left;
+        display: block;
+        width: 1px;
+        height: 20px;
+        background: #CECECE;
+        margin-top: 5px; }
+      section .jiatu-6-1 .jiatu-nav li .jiatu-nav-last {
+        margin: 0; }
+  section #seven-floor {
+    height: 524px;
+    margin-bottom: 10px; }
+    section #seven-floor .f7-biaoti {
+      height: 35px;
+      float: left;
+      width: 465px;
+      border-bottom: 1px solid red;
+      position: relative; }
+      section #seven-floor .f7-biaoti .biaoming {
+        display: block;
+        position: absolute;
+        left: 40px; }
+      section #seven-floor .f7-biaoti .loubiao {
+        line-height: 25px;
+        text-align: center;
+        float: left;
+        background: url(../img/jinglingtu2.png) -124px -94px no-repeat;
+        width: 30px;
+        height: 25px;
+        position: absolute;
+        top: 5px;
+        margin-right: 10px; }
+    section #seven-floor .f7-floor-nav {
+      float: left;
+      width: 723px;
+      height: 35px;
+      border: 1px solid #CECECE;
+      border-bottom: 1px solid red; }
+      section #seven-floor .f7-floor-nav a {
+        color: black; }
+      section #seven-floor .f7-floor-nav li {
+        float: left;
+        width: 119px;
+        height: 35px;
+        text-align: center;
+        line-height: 35px; }
+        section #seven-floor .f7-floor-nav li span {
+          float: left;
+          display: block;
+          width: 2px;
+          height: 10px;
+          background: #CECECE;
+          margin-top: 15px; }
+    section #seven-floor .f7-huowu {
+      float: left;
+      width: 1190px;
+      height: 488px; }
+      section #seven-floor .f7-huowu .f7-huowu-nav {
+        width: 190px;
+        height: 488px;
+        float: left;
+        background: url(../img/jiangyou.jpg);
+        position: relative; }
+        section #seven-floor .f7-huowu .f7-huowu-nav .f7-nav-1 {
+          width: 190px;
+          height: 62px;
+          position: absolute;
+          top: 244px;
+          background: #ffe7d5; }
+          section #seven-floor .f7-huowu .f7-huowu-nav .f7-nav-1 a {
+            color: black;
+            line-height: 18px;
+            font-size: 12px; }
+        section #seven-floor .f7-huowu .f7-huowu-nav .f7-nav-2 {
+          align-content: flex-start;
+          width: 170px;
+          height: 162px;
+          position: absolute;
+          top: 306px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          padding: 10px;
+          background: #fff0e5; }
+          section #seven-floor .f7-huowu .f7-huowu-nav .f7-nav-2 a {
+            display: block;
+            font-size: 12px;
+            color: black;
+            margin-right: 10px;
+            line-height: 25px; }
+      section #seven-floor .f7-huowu .f7-huowu-lei {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        width: 1000px;
+        height: 488px;
+        float: left;
+        background: green; }
+        section #seven-floor .f7-huowu .f7-huowu-lei .f7-kuangone {
+          width: 399px;
+          height: 243px;
+          border-bottom: 1px solid #CECECE;
+          border-left: 1px solid #cecece; }
+        section #seven-floor .f7-huowu .f7-huowu-lei .f7-kuangtwo {
+          width: 199px;
+          height: 243px;
+          border-left: 1px solid #cecece;
+          border-bottom: 1px solid #cecece; }
+        section #seven-floor .f7-huowu .f7-huowu-lei .f7-kuangfour {
+          width: 199px;
+          height: 243px;
+          border-left: 1px solid #cecece;
+          border-bottom: 1px solid #cecece; }
+  section .jiatu-7 {
+    width: 1190px;
+    height: 61px;
+    margin-bottom: 25px; }
+    section .jiatu-7 .jiatu-nav li {
+      float: left;
+      padding: 10px 0; }
+      section .jiatu-7 .jiatu-nav li a {
+        float: left;
+        display: block;
+        width: 100px;
+        height: 30px;
+        background: url(../img/yanghejiuchang.jpg);
+        margin: 0 10px; }
+      section .jiatu-7 .jiatu-nav li .jiatu-xian {
+        float: left;
+        display: block;
+        width: 1px;
+        height: 20px;
+        background: #CECECE;
+        margin-top: 5px; }
+      section .jiatu-7 .jiatu-nav li .jiatu-nav-last {
+        margin: 0; }
+  section #eight-floor {
+    height: 524px;
+    margin-bottom: 10px; }
+    section #eight-floor .f8-biaoti {
+      height: 35px;
+      float: left;
+      width: 465px;
+      border-bottom: 1px solid red;
+      position: relative; }
+      section #eight-floor .f8-biaoti .biaoming {
+        display: block;
+        position: absolute;
+        left: 40px; }
+      section #eight-floor .f8-biaoti .loubiao {
+        line-height: 25px;
+        text-align: center;
+        float: left;
+        background: url(../img/jinglingtu2.png) -124px -94px no-repeat;
+        width: 30px;
+        height: 25px;
+        position: absolute;
+        top: 5px;
+        margin-right: 10px; }
+    section #eight-floor .f8-floor-nav {
+      float: left;
+      width: 723px;
+      height: 35px;
+      border: 1px solid #CECECE;
+      border-bottom: 1px solid red; }
+      section #eight-floor .f8-floor-nav a {
+        color: black; }
+      section #eight-floor .f8-floor-nav li {
+        float: left;
+        width: 119px;
+        height: 35px;
+        text-align: center;
+        line-height: 35px; }
+        section #eight-floor .f8-floor-nav li span {
+          float: left;
+          display: block;
+          width: 2px;
+          height: 10px;
+          background: #CECECE;
+          margin-top: 15px; }
+    section #eight-floor .f8-huowu {
+      float: left;
+      width: 1190px;
+      height: 488px; }
+      section #eight-floor .f8-huowu .f8-huowu-nav {
+        width: 190px;
+        height: 488px;
+        float: left;
+        background: url(../img/jiangyou.jpg);
+        position: relative; }
+        section #eight-floor .f8-huowu .f8-huowu-nav .f8-nav-1 {
+          width: 190px;
+          height: 62px;
+          position: absolute;
+          top: 244px;
+          background: #ffe7d5; }
+          section #eight-floor .f8-huowu .f8-huowu-nav .f8-nav-1 a {
+            color: black;
+            line-height: 18px;
+            font-size: 12px; }
+        section #eight-floor .f8-huowu .f8-huowu-nav .f8-nav-2 {
+          align-content: flex-start;
+          width: 170px;
+          height: 162px;
+          position: absolute;
+          top: 306px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          padding: 10px;
+          background: #fff0e5; }
+          section #eight-floor .f8-huowu .f8-huowu-nav .f8-nav-2 a {
+            display: block;
+            font-size: 12px;
+            color: black;
+            margin-right: 10px;
+            line-height: 25px; }
+      section #eight-floor .f8-huowu .f8-huowu-lei {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        width: 1000px;
+        height: 488px;
+        float: left;
+        background: green; }
+        section #eight-floor .f8-huowu .f8-huowu-lei .f8-kuangone {
+          width: 399px;
+          height: 243px;
+          border-bottom: 1px solid #CECECE;
+          border-left: 1px solid #cecece; }
+        section #eight-floor .f8-huowu .f8-huowu-lei .f8-kuangtwo {
+          width: 199px;
+          height: 243px;
+          border-left: 1px solid #cecece;
+          border-bottom: 1px solid #cecece; }
+        section #eight-floor .f8-huowu .f8-huowu-lei .f8-kuangfour {
+          width: 199px;
+          height: 243px;
+          border-left: 1px solid #cecece;
+          border-bottom: 1px solid #cecece; }
+  section .jiatu-8 {
+    width: 1190px;
+    height: 61px;
+    margin-bottom: 25px; }
+    section .jiatu-8 .jiatu-nav li {
+      float: left;
+      padding: 10px 0; }
+      section .jiatu-8 .jiatu-nav li a {
+        float: left;
+        display: block;
+        width: 100px;
+        height: 30px;
+        background: url(../img/yanghejiuchang.jpg);
+        margin: 0 10px; }
+      section .jiatu-8 .jiatu-nav li .jiatu-xian {
+        float: left;
+        display: block;
+        width: 1px;
+        height: 20px;
+        background: #CECECE;
+        margin-top: 5px; }
+      section .jiatu-8 .jiatu-nav li .jiatu-nav-last {
+        margin: 0; }
+  section #nine-floor {
+    height: 524px;
+    margin-bottom: 10px; }
+    section #nine-floor .f9-biaoti {
+      height: 35px;
+      float: left;
+      width: 465px;
+      border-bottom: 1px solid red;
+      position: relative; }
+      section #nine-floor .f9-biaoti .biaoming {
+        display: block;
+        position: absolute;
+        left: 40px; }
+      section #nine-floor .f9-biaoti .loubiao {
+        line-height: 25px;
+        text-align: center;
+        float: left;
+        background: url(../img/jinglingtu2.png) -124px -94px no-repeat;
+        width: 30px;
+        height: 25px;
+        position: absolute;
+        top: 5px;
+        margin-right: 10px; }
+    section #nine-floor .f9-floor-nav {
+      float: left;
+      width: 723px;
+      height: 35px;
+      border: 1px solid #CECECE;
+      border-bottom: 1px solid red; }
+      section #nine-floor .f9-floor-nav a {
+        color: black; }
+      section #nine-floor .f9-floor-nav li {
+        float: left;
+        width: 119px;
+        height: 35px;
+        text-align: center;
+        line-height: 35px; }
+        section #nine-floor .f9-floor-nav li span {
+          float: left;
+          display: block;
+          width: 2px;
+          height: 10px;
+          background: #CECECE;
+          margin-top: 15px; }
+    section #nine-floor .f9-huowu {
+      float: left;
+      width: 1190px;
+      height: 488px; }
+      section #nine-floor .f9-huowu .f9-huowu-nav {
+        width: 190px;
+        height: 488px;
+        float: left;
+        background: url(../img/jiangyou.jpg);
+        position: relative; }
+        section #nine-floor .f9-huowu .f9-huowu-nav .f9-nav-1 {
+          width: 190px;
+          height: 62px;
+          position: absolute;
+          top: 244px;
+          background: #ffe7d5; }
+          section #nine-floor .f9-huowu .f9-huowu-nav .f9-nav-1 a {
+            color: black;
+            line-height: 18px;
+            font-size: 12px; }
+        section #nine-floor .f9-huowu .f9-huowu-nav .f9-nav-2 {
+          align-content: flex-start;
+          width: 170px;
+          height: 162px;
+          position: absolute;
+          top: 306px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          padding: 10px;
+          background: #fff0e5; }
+          section #nine-floor .f9-huowu .f9-huowu-nav .f9-nav-2 a {
+            display: block;
+            font-size: 12px;
+            color: black;
+            margin-right: 10px;
+            line-height: 25px; }
+      section #nine-floor .f9-huowu .f9-huowu-lei {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        width: 1000px;
+        height: 488px;
+        float: left;
+        background: green; }
+        section #nine-floor .f9-huowu .f9-huowu-lei .f9-kuangone {
+          width: 399px;
+          height: 243px;
+          border-bottom: 1px solid #CECECE;
+          border-left: 1px solid #cecece; }
+        section #nine-floor .f9-huowu .f9-huowu-lei .f9-kuangtwo {
+          width: 199px;
+          height: 243px;
+          border-left: 1px solid #cecece;
+          border-bottom: 1px solid #cecece; }
+        section #nine-floor .f9-huowu .f9-huowu-lei .f9-kuangfour {
+          width: 199px;
+          height: 243px;
+          border-left: 1px solid #cecece;
+          border-bottom: 1px solid #cecece; }
+  section .jiatu-9 {
+    width: 1190px;
+    height: 61px;
+    margin-bottom: 25px; }
+    section .jiatu-9 .jiatu-nav li {
+      float: left;
+      padding: 10px 0; }
+      section .jiatu-9 .jiatu-nav li a {
+        float: left;
+        display: block;
+        width: 100px;
+        height: 30px;
+        background: url(../img/yanghejiuchang.jpg);
+        margin: 0 10px; }
+      section .jiatu-9 .jiatu-nav li .jiatu-xian {
+        float: left;
+        display: block;
+        width: 1px;
+        height: 20px;
+        background: #CECECE;
+        margin-top: 5px; }
+      section .jiatu-9 .jiatu-nav li .jiatu-nav-last {
+        margin: 0; }
+  section #ten-floor {
+    height: 524px;
+    margin-bottom: 10px; }
+    section #ten-floor .f10-biaoti {
+      height: 35px;
+      float: left;
+      width: 465px;
+      border-bottom: 1px solid red;
+      position: relative; }
+      section #ten-floor .f10-biaoti .biaoming {
+        display: block;
+        position: absolute;
+        left: 40px; }
+      section #ten-floor .f10-biaoti .loubiao {
+        line-height: 25px;
+        text-align: center;
+        float: left;
+        background: url(../img/jinglingtu2.png) -124px -94px no-repeat;
+        width: 30px;
+        height: 25px;
+        position: absolute;
+        top: 5px;
+        margin-right: 10px; }
+    section #ten-floor .f10-floor-nav {
+      float: left;
+      width: 723px;
+      height: 35px;
+      border: 1px solid #CECECE;
+      border-bottom: 1px solid red; }
+      section #ten-floor .f10-floor-nav a {
+        color: black; }
+      section #ten-floor .f10-floor-nav li {
+        float: left;
+        width: 119px;
+        height: 35px;
+        text-align: center;
+        line-height: 35px; }
+        section #ten-floor .f10-floor-nav li span {
+          float: left;
+          display: block;
+          width: 2px;
+          height: 10px;
+          background: #CECECE;
+          margin-top: 15px; }
+    section #ten-floor .f10-huowu {
+      float: left;
+      width: 1190px;
+      height: 488px; }
+      section #ten-floor .f10-huowu .f10-huowu-nav {
+        width: 190px;
+        height: 488px;
+        float: left;
+        background: url(../img/jiangyou.jpg);
+        position: relative; }
+        section #ten-floor .f10-huowu .f10-huowu-nav .f10-nav-1 {
+          width: 190px;
+          height: 62px;
+          position: absolute;
+          top: 244px;
+          background: #ffe7d5; }
+          section #ten-floor .f10-huowu .f10-huowu-nav .f10-nav-1 a {
+            color: black;
+            line-height: 18px;
+            font-size: 12px; }
+        section #ten-floor .f10-huowu .f10-huowu-nav .f10-nav-2 {
+          align-content: flex-start;
+          width: 170px;
+          height: 162px;
+          position: absolute;
+          top: 306px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          padding: 10px;
+          background: #fff0e5; }
+          section #ten-floor .f10-huowu .f10-huowu-nav .f10-nav-2 a {
+            display: block;
+            font-size: 12px;
+            color: black;
+            margin-right: 10px;
+            line-height: 25px; }
+      section #ten-floor .f10-huowu .f10-huowu-lei {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        width: 1000px;
+        height: 488px;
+        float: left;
+        background: green; }
+        section #ten-floor .f10-huowu .f10-huowu-lei .f10-kuangone {
+          width: 399px;
+          height: 243px;
+          border-bottom: 1px solid #CECECE;
+          border-left: 1px solid #cecece; }
+        section #ten-floor .f10-huowu .f10-huowu-lei .f10-kuangtwo {
+          width: 199px;
+          height: 243px;
+          border-left: 1px solid #cecece;
+          border-bottom: 1px solid #cecece; }
+        section #ten-floor .f10-huowu .f10-huowu-lei .f10-kuangfour {
+          width: 199px;
+          height: 243px;
+          border-left: 1px solid #cecece;
+          border-bottom: 1px solid #cecece; }
+  section .jiatu-10 {
+    width: 1190px;
+    height: 61px;
+    margin-bottom: 25px; }
+    section .jiatu-10 .jiatu-nav li {
+      float: left;
+      padding: 10px 0; }
+      section .jiatu-10 .jiatu-nav li a {
+        float: left;
+        display: block;
+        width: 100px;
+        height: 30px;
+        background: url(../img/yanghejiuchang.jpg);
+        margin: 0 10px; }
+      section .jiatu-10 .jiatu-nav li .jiatu-xian {
+        float: left;
+        display: block;
+        width: 1px;
+        height: 20px;
+        background: #CECECE;
+        margin-top: 5px; }
+      section .jiatu-10 .jiatu-nav li .jiatu-nav-last {
+        margin: 0; }
+  section #eleven-floor {
+    height: 524px;
+    margin-bottom: 10px; }
+    section #eleven-floor .f11-biaoti {
+      height: 35px;
+      float: left;
+      width: 465px;
+      border-bottom: 1px solid red;
+      position: relative; }
+      section #eleven-floor .f11-biaoti .biaoming {
+        display: block;
+        position: absolute;
+        left: 40px; }
+      section #eleven-floor .f11-biaoti .loubiao {
+        line-height: 25px;
+        text-align: center;
+        float: left;
+        background: url(../img/jinglingtu2.png) -124px -94px no-repeat;
+        width: 30px;
+        height: 25px;
+        position: absolute;
+        top: 5px;
+        margin-right: 10px; }
+    section #eleven-floor .f11-floor-nav {
+      float: left;
+      width: 723px;
+      height: 35px;
+      border: 1px solid #CECECE;
+      border-bottom: 1px solid red; }
+      section #eleven-floor .f11-floor-nav a {
+        color: black; }
+      section #eleven-floor .f11-floor-nav li {
+        float: left;
+        width: 119px;
+        height: 35px;
+        text-align: center;
+        line-height: 35px; }
+        section #eleven-floor .f11-floor-nav li span {
+          float: left;
+          display: block;
+          width: 2px;
+          height: 10px;
+          background: #CECECE;
+          margin-top: 15px; }
+    section #eleven-floor .f11-huowu {
+      float: left;
+      width: 1190px;
+      height: 488px; }
+      section #eleven-floor .f11-huowu .f11-huowu-nav {
+        width: 190px;
+        height: 488px;
+        float: left;
+        background: url(../img/jiangyou.jpg);
+        position: relative; }
+        section #eleven-floor .f11-huowu .f11-huowu-nav .f11-nav-1 {
+          width: 190px;
+          height: 62px;
+          position: absolute;
+          top: 244px;
+          background: #ffe7d5; }
+          section #eleven-floor .f11-huowu .f11-huowu-nav .f11-nav-1 a {
+            color: black;
+            line-height: 18px;
+            font-size: 12px; }
+        section #eleven-floor .f11-huowu .f11-huowu-nav .f11-nav-2 {
+          align-content: flex-start;
+          width: 170px;
+          height: 162px;
+          position: absolute;
+          top: 306px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          padding: 10px;
+          background: #fff0e5; }
+          section #eleven-floor .f11-huowu .f11-huowu-nav .f11-nav-2 a {
+            display: block;
+            font-size: 12px;
+            color: black;
+            margin-right: 10px;
+            line-height: 25px; }
+      section #eleven-floor .f11-huowu .f11-huowu-lei {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        width: 1000px;
+        height: 488px;
+        float: left;
+        background: green; }
+        section #eleven-floor .f11-huowu .f11-huowu-lei .f11-kuangone {
+          width: 399px;
+          height: 243px;
+          border-bottom: 1px solid #CECECE;
+          border-left: 1px solid #cecece; }
+        section #eleven-floor .f11-huowu .f11-huowu-lei .f11-kuangtwo {
+          width: 199px;
+          height: 243px;
+          border-left: 1px solid #cecece;
+          border-bottom: 1px solid #cecece; }
+        section #eleven-floor .f11-huowu .f11-huowu-lei .f11-kuangfour {
+          width: 199px;
+          height: 243px;
+          border-left: 1px solid #cecece;
+          border-bottom: 1px solid #cecece; }
+  section .jiatu-11 {
+    width: 1190px;
+    height: 61px;
+    margin-bottom: 25px; }
+    section .jiatu-11 .jiatu-nav li {
+      float: left;
+      padding: 10px 0; }
+      section .jiatu-11 .jiatu-nav li a {
+        float: left;
+        display: block;
+        width: 100px;
+        height: 30px;
+        background: url(../img/yanghejiuchang.jpg);
+        margin: 0 10px; }
+      section .jiatu-11 .jiatu-nav li .jiatu-xian {
+        float: left;
+        display: block;
+        width: 1px;
+        height: 20px;
+        background: #CECECE;
+        margin-top: 5px; }
+      section .jiatu-11 .jiatu-nav li .jiatu-nav-last {
+        margin: 0; }
+  section #kongbai {
+    height: 60px;
+    background: #fbfbfb; }
 
 article {
   height: 187px;
-  background: green;
+  background: url(../img/feiniu.gif) center no-repeat;
+  border: 1px solid #cecece;
   margin-bottom: 150px; }
+  article a {
+    display: block;
+    width: 1190px;
+    height: 187px; }
 
 #gongneng {
   height: 136px;
-  background: orange; }
+  width: 1190px;
+  background: url(../img/zhengpindijia.jpg);
+  border-top: 1px solid #cecece; }
 
 #fuwu {
   height: 202px;

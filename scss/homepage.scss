@@ -1,4 +1,4 @@
-body,p{
+body,p,section{
     margin:0;
     padding:0;
 }
@@ -31,7 +31,6 @@ li{
         margin:0 auto;
         .denglu{
             float:left;
-//          width:244px;
             height:35px;
             .denglu-last{
                 border-left:1px solid black;
@@ -54,7 +53,6 @@ li{
         }
         .fuwu{
             float:left;
-//          width:616px;
             height:35px;
             margin:{
                 left:330px;
@@ -287,9 +285,16 @@ header{
                 }
             }
         }
+//--------------------轮播       
         #lunbo{
             width:800px;
             height:454px;
+            overflow: hidden;
+//          position:absolute;
+            li{
+                float:left;
+                width:800px;
+            }
         }
         #kefu{
             width:180px;
@@ -396,19 +401,28 @@ header{
 }
 //楼梯间
 section{
-    height:7733px;
-    background:red;
+    height:7734px;
+//  background:red;
     margin:{
         bottom:30px;
     }
-//一楼
+//一楼 
     #one-floor{
+        height:524px;
         margin-bottom:10px;
         .biaoti{
+            height:35px;
             float:left;
             width:465px;
             border-bottom:1px solid red;
-            span{
+            position:relative;
+            .biaoming{
+                position: absolute;
+                left:40px;
+            }
+            .loubiao{
+                position:absolute;
+                top:10px;
                 line-height: 25px;
                 text-align: center;
                 float: left;
@@ -444,6 +458,7 @@ section{
             }
         }
         .huowu{
+            float:left;
             width:1190px;
             height:488px;
             .huowu-nav{
@@ -522,9 +537,11 @@ section{
             }
         }
     }
+//  夹图1
     .jiatu-1{
         width:1190px;
         height:61px;
+        margin-bottom: 25px;
         .jiatu-nav{
             li{
                 float:left;
@@ -557,21 +574,31 @@ section{
 //二楼  
     #two-floor{
         margin-bottom:10px;
-        .biaoti{
+        height:524px;
+        .f2-biaoti{
+            height:35px;
             float:left;
             width:465px;
             border-bottom:1px solid red;
-            span{
+            position:relative;
+           .biaoming{
+                display: block;
+                position: absolute;
+                left:40px;
+            }
+            .loubiao{
                 line-height: 25px;
                 text-align: center;
                 float: left;
                 background: url(../img/jinglingtu2.png) -124px -94px no-repeat;
                 width:30px;
                 height:25px;
+                position: absolute;
+                top:5px;
                 margin-right:10px;
             }
         }
-        .floor-nav{
+        .f2-floor-nav{
             float:left;
             width:723px;
             height:35px;
@@ -596,16 +623,17 @@ section{
                 }
             }
         }
-        .huowu{
+        .f2-huowu{
+            float:left;
             width:1190px;
             height:488px;
-            .huowu-nav{
+            .f2-huowu-nav{
                 width:190px;
                 height:488px;
                 float:left;
                 background:url(../img/jiangyou.jpg);
                 position:relative;
-                .nav-1{
+                .f2-nav-1{
                     width: 190px;
                     height:62px;
                     position:absolute;
@@ -617,7 +645,7 @@ section{
                         font-size: 12px;
                     }
                 }
-               .nav-2{
+               .f2-nav-2{
                     align-content: flex-start;
                     width: 170px;
                     height:162px;
@@ -637,7 +665,7 @@ section{
                     }
                }
             }
-            .huowu-lei{
+            .f2-huowu-lei{
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: flex-start;
@@ -646,12 +674,186 @@ section{
                 height:488px;
                 float:left;
                 background: green;
-                .kuangone{
+                .f2-kuangone{
+                    width:399px;
+                    height:243px;
+                    border:{
+                        bottom:1px solid #CECECE;
+                        left:1px solid #cecece;
+                    }
+                }
+                .f2-kuangtwo{
+                    width:199px;
+                    height:243px;
+                    border:{
+                        left:1px solid #cecece;
+                        bottom:1px solid #cecece;
+                    }
+                }
+                .f2-kuangfour{
+                    width:199px;
+                    height:243px;
+                    border:{
+                        left:1px solid #cecece;
+                        bottom:1px solid #cecece;
+                    }
+                }
+            }
+        }
+    }
+//  夹图2.1
+    .jiatu-2{
+        width:1190px;
+        height:61px;
+        margin-bottom: 25px;
+        .jiatu-nav{
+            li{
+                float:left;
+                padding:10px 0;
+                a{
+                    float: left;
+                    display: block;
+                    width:100px;
+                    height:30px;
+                    background: url(../img/yanghejiuchang.jpg);
+                    margin:0 10px;
+                }
+                .jiatu-xian{
+                    float:left;
+                    display: block;
+                    width:1px;
+                    height:20px;
+                    background:#CECECE;
+                    margin-top:5px;
+                }
+                .jiatu-nav-last{
+                    margin:0;
+                }
+                
+            }
+        }
+    } 
+//  夹图2.2
+    .jiatu-2-2{
+        width:1190px;
+        height:100px;
+        margin-bottom:25px;
+        a{
+        display: block;
+        width:1190px;
+        height:100px;
+        background: url(../img/wenqingnuanju.jpg);
+        }
+    } 
+//  三楼
+    #three-floor{
+        height:524px;
+        margin-bottom:10px;
+        .f3-biaoti{
+            height:35px;
+            float:left;
+            width:465px;
+            border-bottom:1px solid red;
+            position:relative;
+            .biaoming{
+                display: block;
+                position: absolute;
+                left:40px;
+            }
+            .loubiao{
+                line-height: 25px;
+                text-align: center;
+                float: left;
+                background: url(../img/jinglingtu2.png) -124px -94px no-repeat;
+                width:30px;
+                height:25px;
+                position: absolute;
+                top:5px;
+                margin-right:10px;
+            }
+        }
+        .f3-floor-nav{
+            float:left;
+            width:723px;
+            height:35px;
+            border:1px solid #CECECE;
+            border-bottom:1px solid red;
+            a{
+                color:black;
+            }
+            li{
+                float:left;
+                width:119px;
+                height:35px;
+                text-align: center;
+                line-height: 35px;
+                span{
+                    float:left;
+                    display: block;
+                    width:2px;
+                    height:10px;
+                    background:#CECECE;
+                    margin-top:15px;
+                }
+            }
+        }
+        .f3-huowu{
+            float:left;
+            width:1190px;
+            height:488px;
+            .f3-huowu-nav{
+                width:190px;
+                height:488px;
+                float:left;
+                background:url(../img/jiangyou.jpg);
+                position:relative;
+                .f3-nav-1{
+                    width: 190px;
+                    height:62px;
+                    position:absolute;
+                    top:244px;
+                    background: #ffe7d5;
+                    a{
+                        color:black;
+                        line-height: 18px;
+                        font-size: 12px;
+                    }
+                }
+               .f3-nav-2{
+                    align-content: flex-start;
+                    width: 170px;
+                    height:162px;
+                    position:absolute;
+                    top:306px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    padding:10px;
+                    background:#fff0e5;
+                    a{
+                        display: block;
+                        font-size: 12px;
+                        color: black;
+                        margin-right:10px;
+                        line-height: 25px;
+                    }
+               }
+            }
+            .f3-huowu-lei{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-content: flex-start;
+                width:1000px;
+                height:488px;
+                float:left;
+                background: green;
+                .f3-kuangone{
                     width:399px;
                     height:316px;
                     border-bottom:1px solid #CECECE;
                 }
-                .kuangtwo{
+                .f3-kuangtwo{
                     width:199px;
                     height:316px;
                     border:{
@@ -659,12 +861,12 @@ section{
                         bottom:1px solid #cecece;
                     }
                 }
-                .kuangthree{
+                .f3-kuangthree{
                     width:399px;
                     height:170px;
                     border-bottom:1px solid #CECECE;
                 }
-                .kuangfour{
+                .f3-kuangfour{
                     width:199px;
                     height:170px;
                     border:{
@@ -675,19 +877,1487 @@ section{
             }
         }
     }
+    //  夹图3.1
+    .jiatu-3-1{
+        width:1190px;
+        height:61px;
+        margin-bottom: 25px;
+        .jiatu-nav{
+            li{
+                float:left;
+                padding:10px 0;
+                a{
+                    float: left;
+                    display: block;
+                    width:100px;
+                    height:30px;
+                    background: url(../img/yanghejiuchang.jpg);
+                    margin:0 10px;
+                }
+                .jiatu-xian{
+                    float:left;
+                    display: block;
+                    width:1px;
+                    height:20px;
+                    background:#CECECE;
+                    margin-top:5px;
+                }
+                .jiatu-nav-last{
+                    margin:0;
+                }
+                
+            }
+        }
+    } 
+//  夹图3.2
+    .jiatu-3-2{
+        width:1190px;
+        height:100px;
+        margin-bottom:25px;
+        a{
+        display: block;
+        width:1190px;
+        height:100px;
+        background: url(../img/wenqingnuanju.jpg);
+        }
+    }
+//  四楼
+    #four-floor{
+        margin-bottom:10px;
+        .f4-biaoti{
+            float:left;
+            width:465px;
+            border-bottom:1px solid red;
+            position:relative;
+            .biaoming{
+                display: block;
+                position: absolute;
+                left:40px;
+            }
+            .loubiao{
+                line-height: 25px;
+                text-align: center;
+                float: left;
+                background: url(../img/jinglingtu2.png) -124px -94px no-repeat;
+                width:30px;
+                height:25px;
+                position: absolute;
+                top:5px;
+                margin-right:10px;
+            }
+        }
+        .f4-floor-nav{
+            float:left;
+            width:723px;
+            height:35px;
+            border:1px solid #CECECE;
+            border-bottom:1px solid red;
+            a{
+                color:black;
+            }
+            li{
+                float:left;
+                width:119px;
+                height:35px;
+                text-align: center;
+                line-height: 35px;
+                span{
+                    float:left;
+                    display: block;
+                    width:2px;
+                    height:10px;
+                    background:#CECECE;
+                    margin-top:15px;
+                }
+            }
+        }
+        .f4-huowu{
+            width:1190px;
+            height:768px;
+
+            .f4-huowu-nav{
+                width:390px;
+                height:490px;
+                float:left;
+                background:url(../img/dongzhuangremai.jpg);
+                position:relative;
+                .f4-nav-1{
+                    width: 370px;
+                    height:52px;
+                    padding:10px;
+                    position:absolute;
+                    top:244px;
+                    background: #ffe7d5;
+                    a{
+                        color:black;
+                        line-height: 18px;
+                        font-size: 12px;
+                    }
+                }
+               .f4-nav-2{
+                    align-content: flex-start;
+                    width: 390px;
+                    height:178px;
+                    position:absolute;
+                    top:316px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    background:#fff0e5;
+                    .f4-nav-2-1{
+                        width:175px;
+                        height:178px;
+                        position:absolute;
+                        top:0; 
+                        .f4-nav-2-1-1{
+                            padding:10px;
+                        }            
+                        .f4-nav-2-1-2{
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: flex-start;
+                            padding:10px;
+                        }
+                        
+                    }
+                      .f4-nav-2-2{
+                        width:175px;
+                        height:178px;
+                        position:absolute;
+                        top:0; 
+                        left:185px;
+                        .f4-nav-2-2-1{
+                            padding:10px;
+                        }            
+                        .f4-nav-2-2-2{
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: flex-start;
+                            padding:10px;
+                        }
+                        
+                    }
+                    a{
+                        display: block;
+                        font-size: 12px;
+                        color: black;
+                        margin-right:10px;
+                        line-height: 25px;
+                    }
+                }
+                .f4-nav-photo{
+                    width:390px;
+                    height:243px;
+                    background:url(../dist/img/tongzhuangkuanian.jpg);
+                    position:absolute;
+                    top:490px;
+                }
+            }
+            .f4-huowu-lei{
+                float:right;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-content: flex-start;
+                width:800px;
+                height:733px;
+                float:left;
+                background: green;
+                .f4-kuangone{
+                    width:399px;
+                    height:243px;
+                    border:{
+                        bottom:1px solid #CECECE;
+                        left:1px solid #cecece;
+                    }
+                }
+                .f4-kuangtwo{
+                    width:199px;
+                    height:243px;
+                    border:{
+                        left:1px solid #cecece;
+                        bottom:1px solid #cecece;
+                    }
+                }
+            }
+        }
+    }
+    //  夹图4.1
+    .jiatu-4-1{
+        width:1190px;
+        height:61px;
+        margin-bottom: 25px;
+        .jiatu-nav{
+            li{
+                float:left;
+                padding:10px 0;
+                a{
+                    float: left;
+                    display: block;
+                    width:100px;
+                    height:30px;
+                    background: url(../img/yanghejiuchang.jpg);
+                    margin:0 10px;
+                }
+                .jiatu-xian{
+                    float:left;
+                    display: block;
+                    width:1px;
+                    height:20px;
+                    background:#CECECE;
+                    margin-top:5px;
+                }
+                .jiatu-nav-last{
+                    margin:0;
+                }
+                
+            }
+        }
+    } 
+//  夹图4.2
+    .jiatu-4-2{
+        width:1190px;
+        height:100px;
+        margin-bottom:25px;
+        a{
+        display: block;
+        width:1190px;
+        height:100px;
+        background: url(../img/wenqingnuanju.jpg);
+        }
+    }
+//五楼
+    #five-floor{
+        margin-bottom:10px;
+        .f5-biaoti{
+            float:left;
+            width:465px;
+            border-bottom:1px solid red;
+            position:relative;
+            .biaoming{
+                display: block;
+                position: absolute;
+                left:40px;
+            }
+            .loubiao{
+                line-height: 25px;
+                text-align: center;
+                float: left;
+                background: url(../img/jinglingtu2.png) -124px -94px no-repeat;
+                width:30px;
+                height:25px;
+                position: absolute;
+                top:5px;
+                margin-right:10px;
+            }
+        }
+        .f5-floor-nav{
+            float:left;
+            width:723px;
+            height:35px;
+            border:1px solid #CECECE;
+            border-bottom:1px solid red;
+            a{
+                color:black;
+            }
+            li{
+                float:left;
+                width:119px;
+                height:35px;
+                text-align: center;
+                line-height: 35px;
+                span{
+                    float:left;
+                    display: block;
+                    width:2px;
+                    height:10px;
+                    background:#CECECE;
+                    margin-top:15px;
+                }
+            }
+        }
+        .f5-huowu{
+            width:1190px;
+            height:524px;
+
+            .f5-huowu-nav{
+                width:390px;
+                height:488px;
+                float:left;
+                background:url(../img/dongzhuangremai.jpg);
+                position:relative;
+                .f5-nav-1{
+                    width: 370px;
+                    height:52px;
+                    padding:10px;
+                    position:absolute;
+                    top:244px;
+                    background: #ffe7d5;
+                    a{
+                        color:black;
+                        line-height: 18px;
+                        font-size: 12px;
+                    }
+                }
+               .f5-nav-2{
+                    align-content: flex-start;
+                    width: 390px;
+                    height:170px;
+                    position:absolute;
+                    top:316px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    background:#fff0e5;
+                    .f5-nav-2-1{
+                        width:175px;
+                        height:178px;
+                        position:absolute;
+                        top:0; 
+                        .f5-nav-2-1-1{
+                            padding:10px;
+                        }            
+                        .f5-nav-2-1-2{
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: flex-start;
+                            padding:10px;
+                        }
+                        
+                    }
+                      .f5-nav-2-2{
+                        width:175px;
+                        height:178px;
+                        position:absolute;
+                        top:0; 
+                        left:185px;
+                        .f5-nav-2-2-1{
+                            padding:10px;
+                        }            
+                        .f5-nav-2-2-2{
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: flex-start;
+                            padding:10px;
+                        }
+                        
+                    }
+                    a{
+                        display: block;
+                        font-size: 12px;
+                        color: black;
+                        margin-right:10px;
+                        line-height: 25px;
+                    }
+                }
+                .f5-nav-photo{
+                    width:390px;
+                    height:243px;
+                    background:url(../dist/img/tongzhuangkuanian.jpg);
+                    position:absolute;
+                    top:490px;
+                }
+            }
+            .f5-huowu-lei{
+                float:right;
+//              display: flex;
+//              flex-wrap: wrap;
+//              justify-content: flex-start;
+//              align-content: flex-start;
+                width:800px;
+                height:488px;
+                float:left;
+                background: green;
+                .f5-kuangone{
+                    width:399px;
+                    height:243px;
+                    float:left;
+                    border:{
+                        bottom:1px solid #CECECE;
+                        left:1px solid #cecece;
+                    }
+                }
+                .f5-kuangtwo{
+                    width:199px;
+                    height:121px;
+                    float:left;
+                    border:{
+                        left:1px solid #cecece;
+                        bottom:1px solid #cecece;
+                    }
+                }
+                .f5-kuangthree{
+                    width:199px;
+                    height:243px;
+                    float:left;
+                    border:{
+                        left:1px solid #cecece;
+                        bottom:1px solid #cecece;
+                    }
+                }
+            }
+        }
+    }
+//夹图5.1
+    .jiatu-5-1{
+        width:1190px;
+        height:61px;
+        margin-bottom: 25px;
+        .jiatu-nav{
+            li{
+                float:left;
+                padding:10px 0;
+                a{
+                    float: left;
+                    display: block;
+                    width:100px;
+                    height:30px;
+                    background: url(../img/yanghejiuchang.jpg);
+                    margin:0 10px;
+                }
+                .jiatu-xian{
+                    float:left;
+                    display: block;
+                    width:1px;
+                    height:20px;
+                    background:#CECECE;
+                    margin-top:5px;
+                }
+                .jiatu-nav-last{
+                    margin:0;
+                }
+                
+            }
+        }
+    } 
+//六楼
+    #six-floor{
+        margin-bottom:10px;
+        .f6-biaoti{
+            float:left;
+            width:465px;
+            border-bottom:1px solid red;
+            position:relative;
+            .biaoming{
+                display: block;
+                position: absolute;
+                left:40px;
+            }
+            .loubiao{
+                line-height: 25px;
+                text-align: center;
+                float: left;
+                background: url(../img/jinglingtu2.png) -124px -94px no-repeat;
+                width:30px;
+                height:25px;
+                position: absolute;
+                top:5px;
+                margin-right:10px;
+            }
+        }
+        .f6-floor-nav{
+            float:left;
+            width:723px;
+            height:35px;
+            border:1px solid #CECECE;
+            border-bottom:1px solid red;
+            a{
+                color:black;
+            }
+            li{
+                float:left;
+                width:119px;
+                height:35px;
+                text-align: center;
+                line-height: 35px;
+                span{
+                    float:left;
+                    display: block;
+                    width:2px;
+                    height:10px;
+                    background:#CECECE;
+                    margin-top:15px;
+                }
+            }
+        }
+        .f6-huowu{
+            width:1190px;
+            height:768px;
+
+            .f6-huowu-nav{
+                width:390px;
+                height:490px;
+                float:left;
+                background:url(../img/dongzhuangremai.jpg);
+                position:relative;
+                .f6-nav-1{
+                    width: 370px;
+                    height:52px;
+                    padding:10px;
+                    position:absolute;
+                    top:244px;
+                    background: #ffe7d5;
+                    a{
+                        color:black;
+                        line-height: 18px;
+                        font-size: 12px;
+                    }
+                }
+               .f6-nav-2{
+                    align-content: flex-start;
+                    width: 390px;
+                    height:178px;
+                    position:absolute;
+                    top:316px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    background:#fff0e5;
+                    .f6-nav-2-1{
+                        width:175px;
+                        height:178px;
+                        position:absolute;
+                        top:0; 
+                        .f6-nav-2-1-1{
+                            padding:10px;
+                        }            
+                        .f6-nav-2-1-2{
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: flex-start;
+                            padding:10px;
+                        }
+                        
+                    }
+                      .f6-nav-2-2{
+                        width:175px;
+                        height:178px;
+                        position:absolute;
+                        top:0; 
+                        left:185px;
+                        .f6-nav-2-2-1{
+                            padding:10px;
+                        }            
+                        .f6-nav-2-2-2{
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: flex-start;
+                            padding:10px;
+                        }
+                        
+                    }
+                    a{
+                        display: block;
+                        font-size: 12px;
+                        color: black;
+                        margin-right:10px;
+                        line-height: 25px;
+                    }
+                }
+                .f6-nav-photo{
+                    width:390px;
+                    height:243px;
+                    background:url(../dist/img/tongzhuangkuanian.jpg);
+                    position:absolute;
+                    top:490px;
+                }
+            }
+            .f6-huowu-lei{
+                float:right;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-content: flex-start;
+                width:800px;
+                height:733px;
+                float:left;
+                background: green;
+                .f6-kuangone{
+                    width:399px;
+                    height:243px;
+                    border:{
+                        bottom:1px solid #CECECE;
+                        left:1px solid #cecece;
+                    }
+                }
+                .f6-kuangtwo{
+                    width:199px;
+                    height:243px;
+                    border:{
+                        left:1px solid #cecece;
+                        bottom:1px solid #cecece;
+                    }
+                }
+            }
+        }
+    }
+//夹图6.1
+    .jiatu-6-1{
+        width:1190px;
+        height:61px;
+        margin-bottom: 25px;
+        .jiatu-nav{
+            li{
+                float:left;
+                padding:10px 0;
+                a{
+                    float: left;
+                    display: block;
+                    width:100px;
+                    height:30px;
+                    background: url(../img/yanghejiuchang.jpg);
+                    margin:0 10px;
+                }
+                .jiatu-xian{
+                    float:left;
+                    display: block;
+                    width:1px;
+                    height:20px;
+                    background:#CECECE;
+                    margin-top:5px;
+                }
+                .jiatu-nav-last{
+                    margin:0;
+                }
+                
+            }
+        }
+    } 
+//七楼
+    #seven-floor{
+        height:524px;
+        margin-bottom:10px;
+        .f7-biaoti{
+            height:35px;
+            float:left;
+            width:465px;
+            border-bottom:1px solid red;
+            position:relative;
+           .biaoming{
+                display: block;
+                position: absolute;
+                left:40px;
+            }
+            .loubiao{
+                line-height: 25px;
+                text-align: center;
+                float: left;
+                background: url(../img/jinglingtu2.png) -124px -94px no-repeat;
+                width:30px;
+                height:25px;
+                position: absolute;
+                top:5px;
+                margin-right:10px;
+            }
+        }
+        .f7-floor-nav{
+            float:left;
+            width:723px;
+            height:35px;
+            border:1px solid #CECECE;
+            border-bottom:1px solid red;
+            a{
+                color:black;
+            }
+            li{
+                float:left;
+                width:119px;
+                height:35px;
+                text-align: center;
+                line-height: 35px;
+                span{
+                    float:left;
+                    display: block;
+                    width:2px;
+                    height:10px;
+                    background:#CECECE;
+                    margin-top:15px;
+                }
+            }
+        }
+        .f7-huowu{
+            float:left;
+            width:1190px;
+            height:488px;
+            .f7-huowu-nav{
+                width:190px;
+                height:488px;
+                float:left;
+                background:url(../img/jiangyou.jpg);
+                position:relative;
+                .f7-nav-1{
+                    width: 190px;
+                    height:62px;
+                    position:absolute;
+                    top:244px;
+                    background: #ffe7d5;
+                    a{
+                        color:black;
+                        line-height: 18px;
+                        font-size: 12px;
+                    }
+                }
+               .f7-nav-2{
+                    align-content: flex-start;
+                    width: 170px;
+                    height:162px;
+                    position:absolute;
+                    top:306px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    padding:10px;
+                    background:#fff0e5;
+                    a{
+                        display: block;
+                        font-size: 12px;
+                        color: black;
+                        margin-right:10px;
+                        line-height: 25px;
+                    }
+               }
+            }
+            .f7-huowu-lei{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-content: flex-start;
+                width:1000px;
+                height:488px;
+                float:left;
+                background: green;
+                .f7-kuangone{
+                    width:399px;
+                    height:243px;
+                    border:{
+                        bottom:1px solid #CECECE;
+                        left:1px solid #cecece;
+                    }
+                }
+                .f7-kuangtwo{
+                    width:199px;
+                    height:243px;
+                    border:{
+                        left:1px solid #cecece;
+                        bottom:1px solid #cecece;
+                    }
+                }
+                .f7-kuangfour{
+                    width:199px;
+                    height:243px;
+                    border:{
+                        left:1px solid #cecece;
+                        bottom:1px solid #cecece;
+                    }
+                }
+            }
+        }
+    }
+//  夹图7.1
+    .jiatu-7{
+        width:1190px;
+        height:61px;
+        margin-bottom: 25px;
+        .jiatu-nav{
+            li{
+                float:left;
+                padding:10px 0;
+                a{
+                    float: left;
+                    display: block;
+                    width:100px;
+                    height:30px;
+                    background: url(../img/yanghejiuchang.jpg);
+                    margin:0 10px;
+                }
+                .jiatu-xian{
+                    float:left;
+                    display: block;
+                    width:1px;
+                    height:20px;
+                    background:#CECECE;
+                    margin-top:5px;
+                }
+                .jiatu-nav-last{
+                    margin:0;
+                }
+                
+            }
+        }
+    } 
+    //八楼
+    #eight-floor{
+        height:524px;
+        margin-bottom:10px;
+        .f8-biaoti{
+            height:35px;
+            float:left;
+            width:465px;
+            border-bottom:1px solid red;
+            position:relative;
+           .biaoming{
+                display: block;
+                position: absolute;
+                left:40px;
+            }
+            .loubiao{
+                line-height: 25px;
+                text-align: center;
+                float: left;
+                background: url(../img/jinglingtu2.png) -124px -94px no-repeat;
+                width:30px;
+                height:25px;
+                position: absolute;
+                top:5px;
+                margin-right:10px;
+            }
+        }
+        .f8-floor-nav{
+            float:left;
+            width:723px;
+            height:35px;
+            border:1px solid #CECECE;
+            border-bottom:1px solid red;
+            a{
+                color:black;
+            }
+            li{
+                float:left;
+                width:119px;
+                height:35px;
+                text-align: center;
+                line-height: 35px;
+                span{
+                    float:left;
+                    display: block;
+                    width:2px;
+                    height:10px;
+                    background:#CECECE;
+                    margin-top:15px;
+                }
+            }
+        }
+        .f8-huowu{
+            float:left;
+            width:1190px;
+            height:488px;
+            .f8-huowu-nav{
+                width:190px;
+                height:488px;
+                float:left;
+                background:url(../img/jiangyou.jpg);
+                position:relative;
+                .f8-nav-1{
+                    width: 190px;
+                    height:62px;
+                    position:absolute;
+                    top:244px;
+                    background: #ffe7d5;
+                    a{
+                        color:black;
+                        line-height: 18px;
+                        font-size: 12px;
+                    }
+                }
+               .f8-nav-2{
+                    align-content: flex-start;
+                    width: 170px;
+                    height:162px;
+                    position:absolute;
+                    top:306px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    padding:10px;
+                    background:#fff0e5;
+                    a{
+                        display: block;
+                        font-size: 12px;
+                        color: black;
+                        margin-right:10px;
+                        line-height: 25px;
+                    }
+               }
+            }
+            .f8-huowu-lei{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-content: flex-start;
+                width:1000px;
+                height:488px;
+                float:left;
+                background: green;
+                .f8-kuangone{
+                    width:399px;
+                    height:243px;
+                    border:{
+                        bottom:1px solid #CECECE;
+                        left:1px solid #cecece;
+                    }
+                }
+                .f8-kuangtwo{
+                    width:199px;
+                    height:243px;
+                    border:{
+                        left:1px solid #cecece;
+                        bottom:1px solid #cecece;
+                    }
+                }
+                .f8-kuangfour{
+                    width:199px;
+                    height:243px;
+                    border:{
+                        left:1px solid #cecece;
+                        bottom:1px solid #cecece;
+                    }
+                }
+            }
+        }
+    }
+//  夹图8.1
+    .jiatu-8{
+        width:1190px;
+        height:61px;
+        margin-bottom: 25px;
+        .jiatu-nav{
+            li{
+                float:left;
+                padding:10px 0;
+                a{
+                    float: left;
+                    display: block;
+                    width:100px;
+                    height:30px;
+                    background: url(../img/yanghejiuchang.jpg);
+                    margin:0 10px;
+                }
+                .jiatu-xian{
+                    float:left;
+                    display: block;
+                    width:1px;
+                    height:20px;
+                    background:#CECECE;
+                    margin-top:5px;
+                }
+                .jiatu-nav-last{
+                    margin:0;
+                }
+                
+            }
+        }
+    }
+    //九楼
+    #nine-floor{
+        height:524px;
+        margin-bottom:10px;
+        .f9-biaoti{
+            height:35px;
+            float:left;
+            width:465px;
+            border-bottom:1px solid red;
+            position:relative;
+           .biaoming{
+                display: block;
+                position: absolute;
+                left:40px;
+            }
+            .loubiao{
+                line-height: 25px;
+                text-align: center;
+                float: left;
+                background: url(../img/jinglingtu2.png) -124px -94px no-repeat;
+                width:30px;
+                height:25px;
+                position: absolute;
+                top:5px;
+                margin-right:10px;
+            }
+        }
+        .f9-floor-nav{
+            float:left;
+            width:723px;
+            height:35px;
+            border:1px solid #CECECE;
+            border-bottom:1px solid red;
+            a{
+                color:black;
+            }
+            li{
+                float:left;
+                width:119px;
+                height:35px;
+                text-align: center;
+                line-height: 35px;
+                span{
+                    float:left;
+                    display: block;
+                    width:2px;
+                    height:10px;
+                    background:#CECECE;
+                    margin-top:15px;
+                }
+            }
+        }
+        .f9-huowu{
+            float:left;
+            width:1190px;
+            height:488px;
+            .f9-huowu-nav{
+                width:190px;
+                height:488px;
+                float:left;
+                background:url(../img/jiangyou.jpg);
+                position:relative;
+                .f9-nav-1{
+                    width: 190px;
+                    height:62px;
+                    position:absolute;
+                    top:244px;
+                    background: #ffe7d5;
+                    a{
+                        color:black;
+                        line-height: 18px;
+                        font-size: 12px;
+                    }
+                }
+               .f9-nav-2{
+                    align-content: flex-start;
+                    width: 170px;
+                    height:162px;
+                    position:absolute;
+                    top:306px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    padding:10px;
+                    background:#fff0e5;
+                    a{
+                        display: block;
+                        font-size: 12px;
+                        color: black;
+                        margin-right:10px;
+                        line-height: 25px;
+                    }
+               }
+            }
+            .f9-huowu-lei{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-content: flex-start;
+                width:1000px;
+                height:488px;
+                float:left;
+                background: green;
+                .f9-kuangone{
+                    width:399px;
+                    height:243px;
+                    border:{
+                        bottom:1px solid #CECECE;
+                        left:1px solid #cecece;
+                    }
+                }
+                .f9-kuangtwo{
+                    width:199px;
+                    height:243px;
+                    border:{
+                        left:1px solid #cecece;
+                        bottom:1px solid #cecece;
+                    }
+                }
+                .f9-kuangfour{
+                    width:199px;
+                    height:243px;
+                    border:{
+                        left:1px solid #cecece;
+                        bottom:1px solid #cecece;
+                    }
+                }
+            }
+        }
+    }
+//  夹图9.1
+    .jiatu-9{
+        width:1190px;
+        height:61px;
+        margin-bottom: 25px;
+        .jiatu-nav{
+            li{
+                float:left;
+                padding:10px 0;
+                a{
+                    float: left;
+                    display: block;
+                    width:100px;
+                    height:30px;
+                    background: url(../img/yanghejiuchang.jpg);
+                    margin:0 10px;
+                }
+                .jiatu-xian{
+                    float:left;
+                    display: block;
+                    width:1px;
+                    height:20px;
+                    background:#CECECE;
+                    margin-top:5px;
+                }
+                .jiatu-nav-last{
+                    margin:0;
+                }
+            }
+        }
+    }
+//十楼
+    #ten-floor{
+        height:524px;
+        margin-bottom:10px;
+        .f10-biaoti{
+            height:35px;
+            float:left;
+            width:465px;
+            border-bottom:1px solid red;
+            position:relative;
+           .biaoming{
+                display: block;
+                position: absolute;
+                left:40px;
+            }
+            .loubiao{
+                line-height: 25px;
+                text-align: center;
+                float: left;
+                background: url(../img/jinglingtu2.png) -124px -94px no-repeat;
+                width:30px;
+                height:25px;
+                position: absolute;
+                top:5px;
+                margin-right:10px;
+            }
+        }
+        .f10-floor-nav{
+            float:left;
+            width:723px;
+            height:35px;
+            border:1px solid #CECECE;
+            border-bottom:1px solid red;
+            a{
+                color:black;
+            }
+            li{
+                float:left;
+                width:119px;
+                height:35px;
+                text-align: center;
+                line-height: 35px;
+                span{
+                    float:left;
+                    display: block;
+                    width:2px;
+                    height:10px;
+                    background:#CECECE;
+                    margin-top:15px;
+                }
+            }
+        }
+        .f10-huowu{
+            float:left;
+            width:1190px;
+            height:488px;
+            .f10-huowu-nav{
+                width:190px;
+                height:488px;
+                float:left;
+                background:url(../img/jiangyou.jpg);
+                position:relative;
+                .f10-nav-1{
+                    width: 190px;
+                    height:62px;
+                    position:absolute;
+                    top:244px;
+                    background: #ffe7d5;
+                    a{
+                        color:black;
+                        line-height: 18px;
+                        font-size: 12px;
+                    }
+                }
+               .f10-nav-2{
+                    align-content: flex-start;
+                    width: 170px;
+                    height:162px;
+                    position:absolute;
+                    top:306px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    padding:10px;
+                    background:#fff0e5;
+                    a{
+                        display: block;
+                        font-size: 12px;
+                        color: black;
+                        margin-right:10px;
+                        line-height: 25px;
+                    }
+               }
+            }
+            .f10-huowu-lei{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-content: flex-start;
+                width:1000px;
+                height:488px;
+                float:left;
+                background: green;
+                .f10-kuangone{
+                    width:399px;
+                    height:243px;
+                    border:{
+                        bottom:1px solid #CECECE;
+                        left:1px solid #cecece;
+                    }
+                }
+                .f10-kuangtwo{
+                    width:199px;
+                    height:243px;
+                    border:{
+                        left:1px solid #cecece;
+                        bottom:1px solid #cecece;
+                    }
+                }
+                .f10-kuangfour{
+                    width:199px;
+                    height:243px;
+                    border:{
+                        left:1px solid #cecece;
+                        bottom:1px solid #cecece;
+                    }
+                }
+            }
+        }
+    }
+//  夹图10.1
+    .jiatu-10{
+        width:1190px;
+        height:61px;
+        margin-bottom: 25px;
+        .jiatu-nav{
+            li{
+                float:left;
+                padding:10px 0;
+                a{
+                    float: left;
+                    display: block;
+                    width:100px;
+                    height:30px;
+                    background: url(../img/yanghejiuchang.jpg);
+                    margin:0 10px;
+                }
+                .jiatu-xian{
+                    float:left;
+                    display: block;
+                    width:1px;
+                    height:20px;
+                    background:#CECECE;
+                    margin-top:5px;
+                }
+                .jiatu-nav-last{
+                    margin:0;
+                }
+            }
+        }
+    }
+//十一楼
+    #eleven-floor{
+        height:524px;
+        margin-bottom:10px;
+        .f11-biaoti{
+            height:35px;
+            float:left;
+            width:465px;
+            border-bottom:1px solid red;
+            position:relative;
+           .biaoming{
+                display: block;
+                position: absolute;
+                left:40px;
+            }
+            .loubiao{
+                line-height: 25px;
+                text-align: center;
+                float: left;
+                background: url(../img/jinglingtu2.png) -124px -94px no-repeat;
+                width:30px;
+                height:25px;
+                position: absolute;
+                top:5px;
+                margin-right:10px;
+            }
+        }
+        .f11-floor-nav{
+            float:left;
+            width:723px;
+            height:35px;
+            border:1px solid #CECECE;
+            border-bottom:1px solid red;
+            a{
+                color:black;
+            }
+            li{
+                float:left;
+                width:119px;
+                height:35px;
+                text-align: center;
+                line-height: 35px;
+                span{
+                    float:left;
+                    display: block;
+                    width:2px;
+                    height:10px;
+                    background:#CECECE;
+                    margin-top:15px;
+                }
+            }
+        }
+        .f11-huowu{
+            float:left;
+            width:1190px;
+            height:488px;
+            .f11-huowu-nav{
+                width:190px;
+                height:488px;
+                float:left;
+                background:url(../img/jiangyou.jpg);
+                position:relative;
+                .f11-nav-1{
+                    width: 190px;
+                    height:62px;
+                    position:absolute;
+                    top:244px;
+                    background: #ffe7d5;
+                    a{
+                        color:black;
+                        line-height: 18px;
+                        font-size: 12px;
+                    }
+                }
+               .f11-nav-2{
+                    align-content: flex-start;
+                    width: 170px;
+                    height:162px;
+                    position:absolute;
+                    top:306px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    padding:10px;
+                    background:#fff0e5;
+                    a{
+                        display: block;
+                        font-size: 12px;
+                        color: black;
+                        margin-right:10px;
+                        line-height: 25px;
+                    }
+               }
+            }
+            .f11-huowu-lei{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-content: flex-start;
+                width:1000px;
+                height:488px;
+                float:left;
+                background: green;
+                .f11-kuangone{
+                    width:399px;
+                    height:243px;
+                    border:{
+                        bottom:1px solid #CECECE;
+                        left:1px solid #cecece;
+                    }
+                }
+                .f11-kuangtwo{
+                    width:199px;
+                    height:243px;
+                    border:{
+                        left:1px solid #cecece;
+                        bottom:1px solid #cecece;
+                    }
+                }
+                .f11-kuangfour{
+                    width:199px;
+                    height:243px;
+                    border:{
+                        left:1px solid #cecece;
+                        bottom:1px solid #cecece;
+                    }
+                }
+            }
+        }
+    }
+//  夹图11.1
+    .jiatu-11{
+        width:1190px;
+        height:61px;
+        margin-bottom: 25px;
+        .jiatu-nav{
+            li{
+                float:left;
+                padding:10px 0;
+                a{
+                    float: left;
+                    display: block;
+                    width:100px;
+                    height:30px;
+                    background: url(../img/yanghejiuchang.jpg);
+                    margin:0 10px;
+                }
+                .jiatu-xian{
+                    float:left;
+                    display: block;
+                    width:1px;
+                    height:20px;
+                    background:#CECECE;
+                    margin-top:5px;
+                }
+                .jiatu-nav-last{
+                    margin:0;
+                }
+            }
+        }
+    }
+    #kongbai{
+        height:60px;
+        background: #fbfbfb;
+    }
 }
 
 article{
     height:187px;
-    background: green;
+    background:url(../img/feiniu.gif) center no-repeat;
+    border:1px solid #cecece;
     margin:{
         bottom:150px;
+    }
+    a{
+        display: block;
+        width:1190px;
+        height:187px;
     }
 }
 
 #gongneng{
     height:136px;
-    background:orange;
+    width:1190px;
+    background:url(../img/zhengpindijia.jpg);
+    border:{
+        top:1px solid #cecece;
+    }
+    
 }
 
 #fuwu{
