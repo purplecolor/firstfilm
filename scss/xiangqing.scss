@@ -1,0 +1,419 @@
+body,section,ul,li{
+    margin:0;
+    padding:0;
+}
+ul,a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+header{
+    float:left;
+    height:120px;
+    background:white;
+    padding-top:16px;
+     width:1190px;
+    margin:0 auto;
+    margin-bottom:40px;
+    img{
+        float:left;
+        margin-bottom:20px;
+    }
+    #sousuo{
+        float:left;
+        width:442px;
+        height:38px;
+        margin-left:30px;
+        .sousuo{
+            float:left;
+            width:442px;
+            height:38px;
+            border:2px solid #d7063b;
+            outline: none;
+        }
+    }
+    
+    .btn{
+        width:98px;
+        height:44px;
+        background: #d7063b;
+        color:white;
+        border:none;
+        font-size:16px;
+        float:left;
+        margin:{
+            right:118px;
+        }
+    }
+    .mypaycar{
+        width:80px;
+        height:45px;
+        background:#e9e9e9;
+        color:white;
+        float:left;
+        text-align: center;
+        line-height: 45px;
+    }
+    .gouwuche{
+        float:left;
+        height:45px;
+        width:64px;
+        background:#d7063b;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .car{
+            width:20px;
+            height:16px;
+            background: url(../dist/img/fn_g_header.png) -70px -97px;
+        }
+        span{
+            color:white;
+        }
+        .zero{
+            display: inline-block;
+            width:20px;
+            height:16px;
+            color:white;
+            margin-left:5px;
+            margin-right:5px;
+        }
+        
+    }
+    .sousuo-nav{
+        margin:{
+            left:30px;
+            right:200px;
+        }
+        float:left;
+        display: flex;
+        justify-content: flex-start;
+        li{
+            margin:{
+                right:10px;
+            }
+            color:#cecece;
+            font-size:12px;
+        }
+    }
+    .lingyuan{
+        float:right;
+        margin:{
+            right:25px;
+        }
+    }
+    .all-pay{
+        float:left;
+        width:190px;
+        height:41px;
+        margin:{
+            top:18px;
+        }
+        background:#d7063b;
+        a{
+            color: white;
+            line-height: 41px;
+        }
+        .leibie{
+            float:left;
+            margin:{
+                top:15px;
+                right:5px;
+                left:10px;
+            }
+            width:16px;
+            height:10px;
+            background: url(../img/fn_g_header.png) 0 -114px;
+        }
+    }
+    .title-nav{
+        margin:{
+            top:18px;
+            left:15px;
+        }
+        float:left;
+        display: flex;
+        justify-content: flex-start;
+        li{
+            a{
+                font-size:14px;
+                font-weight: 900;
+                line-height: 41px; 
+                color:black;
+            }
+            .hot{
+                position:relative;
+            }
+            margin:{
+                right:30px;
+            }
+            .hot-pay{
+                display: block;
+                width:27px;
+                height:18px;
+                background: url(../img/fn_g_header.png) 0 -140px;
+                position:absolute;
+                top:-12px;
+                right:-2px;
+                
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+#touming-wrap{
+    float:left;
+    height:39px;
+    #touming{
+        height:39px;
+        margin:0 auto;
+        padding:0 60px;
+
+        ul{
+            li{
+                float:left;
+                a{
+                    color:black;
+                    font-size:12px;
+                    line-height: 39px;
+                }
+                .bold{
+                    font-weight: bolder;
+                }
+                .tuijian{
+                    color:red;
+                }
+            }
+        }
+    }
+}
+#section-wrap{
+    height:575px;
+    float:left;
+    section{
+        height:576px;
+        margin:0 auto;
+        width:1201px;
+        padding:0 30px;
+
+        .photo{
+            float:left;
+            height:576px;
+            width:400px;
+            border:{
+                left: 1px solid #CECECE;
+                bottom: 1px solid #CECECE;
+                
+            }
+            img{
+                float:left;
+            }
+            .xiaotu{
+                width:352px;
+                height:66px;
+                padding:3px 22px 15px 22px;
+                float:left;
+                margin-top:17px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                a{
+                    display: block;
+                    width:15px;
+                    height:22px;
+                    background: url(../img/jiantou.gif) no-repeat;
+                    
+                }
+                .you{
+                    background: url(../img/jiantou.gif) 0 -21px no-repeat;
+                }
+                img{
+                    width:58px;
+                    height:58px;
+                }
+            }
+            p{
+                font-size: 12px;
+                padding-left:16px;
+                a{
+                    color:black;
+                }
+            }
+        }
+        .content{
+            height:575px;
+            float:left;
+            width:588px;
+            border:1px solid #CECECE;
+            .biaoti{
+                width:538px;
+                height:50px;
+                padding: 20px 25px 15px;
+                border-bottom: 1px solid #dedede;
+                overflow: hidden;
+                background: #fff;
+                margin-bottom: 15px;
+            }
+            .feiniujia{
+                height:70px;
+                width:553px;
+                margin-left: 10px;
+                margin-right: 10px;
+                padding: 12px 0 12px 15px;
+                background: #fffaf2;
+                position: relative;
+                .jianyi{
+                    width:553px;
+                    height:14px;
+                    font-size:12px;
+                    margin:0;
+                }
+                .feiniu{
+                    width:553px;
+                    height: 24px;
+                    line-height: 24px;
+                    margin-top: 8px;
+                    padding: 0;
+                    font-size:12px;
+                }
+                
+            }
+            .oul{
+                    width:568px;
+                    height:239px;
+                    margin: 13px 10px 0 0;
+                    padding-left: 14px;
+                    span{
+                            font-size: 12px;
+                            width:67px;
+                            height: 40px;
+                            float:left;
+                            color:#CECECE;
+                            margin:{
+                                right:5px;
+                                
+                            }
+                        }
+                    .yanse{
+                        
+                        height:45px;
+                       
+                        margin-bottom:10px;
+
+                        span{
+                            float:left;
+                            text-align: left;
+                            line-height: 35px;
+                            color:#CECECE;
+                            margin:{
+                                right:5px;
+                            }
+                        }
+                        a{
+                            float:left;
+                            margin:{
+                                right:10px;
+                            }
+                        }
+                         img{
+                                float:left;
+                                width:38px;
+                                height:38px;
+                            }
+                    }
+                    .guige{
+                        height:29px;
+                        margin:{
+                            bottom:5px;
+                        }
+                        
+                        a{
+                            float:left;
+                            width:12px;
+                            height:22px;
+                            padding:0 10px;
+                            text-align: center;
+                            line-height: 22px;
+                            border:1px solid #CECECE;
+                            font-size: 12px;
+                            color:black;
+                            margin:{
+                                right:10px;
+                            }
+                        }
+                        
+                    }
+                    .xuanze{
+                        height: 14px;
+                        float:left;
+                        width:554px;
+                        text-align: left;
+                        margin:{
+                            bottom:10px;
+                        }
+                        .yixuan{
+                            color: black;
+                        }
+                    }
+                    .shuliang{
+                        width:554px;
+                        height:32px;
+                        span{
+                            line-height: 32px;
+                            margin:{
+                                right:10px;
+                            }
+                        }
+                        a{
+                            float:left;
+                        }
+                        a{
+                            width:30px;
+                            height: 30px;
+                            text-align: center;
+                            line-height: 30px;
+                            border: 1px solid #CECECE;
+                            margin:0 2px;
+                            float:left;
+                        }
+                        .geshu{
+                            float:left;
+                            width: 60px;
+                            height: 28px;
+                            text-align: center;
+                            line-height: 30px;
+                            outline: none;
+                            border:1px solid #CECECE;
+                        }
+                        margin:{
+                            bottom:10px;
+                        }
+                    }
+                }
+            .tianjia{
+                float:left;
+                width:161px;
+                height:45px;
+                background:url(../img/jiarugouwuche.png) -50px -35px no-repeat;
+                margin:{
+                    left:77px;
+                }
+            }   
+        }
+        .huanyihuan{
+            height:575px;
+            float:left;
+            width:200px;
+
+        }
+    }
+}

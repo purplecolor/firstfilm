@@ -1,0 +1,211 @@
+body,p,ul,h3{
+    margin:0;
+    padding:0;
+}
+#header-wrap{
+    height:98px;
+
+}
+header{
+    height:98px;
+    margin:0 auto;
+    width:1270px;
+    border:1px solid black;
+    img{
+        float:left;
+        margin:{
+            left:140px;
+            top:30px;
+        }
+    }
+    span{
+        float: left;
+        width:2px;
+        height:40px;
+        background:black;
+        margin:15px;
+        
+    }
+    h3{
+        float:left;
+    }
+}
+#denglu-wrap{
+    height:495px;
+    background:#cecece;
+
+    #denglu{
+        padding:40px;
+        
+        .denglu{
+            width:305px;
+            height:330px;
+            background:white;
+            padding:25px 20px;
+            float:left;
+            position:relative;
+            img{
+                float:right;
+                margin:{
+                    top:-25px;
+                    right:-20px;
+                }
+                cursor:pointer;
+            }
+            .huangbiao{
+                width:105px;
+                height:21px;
+                border:1px solid #ffd8a4;
+                background:#fffdee;
+                float:left;
+                font-size:12px;
+                text-align: center;
+                line-height: 21px;
+                margin:{
+                    top:-55px;
+                    left:158px;
+                }
+            }
+            .xiaobiao{
+                float:left;
+                width:40px;
+                height:40px;
+                background: url(../img/dialog-login.png) no-repeat;
+                border:1px solid #cecece;
+            }
+            .xiaobiao2{
+               float:left;
+                width:40px;
+                height:40px;
+                background: url(../img/dialog-login.png) no-repeat;
+                 border:1px solid #cecece;
+            }
+            input{
+                outline: none;
+            }
+            .txt{
+                float:left;
+                height:36px;
+                width:250px;
+                margin:{
+                   bottom:25px;
+                }
+            }
+            .psw{
+                float:left;
+                height:36px;
+                width:250px;
+                margin:{
+                   bottom:25px;
+                }
+                
+            }
+            p{
+                float:left;
+                height:21px;
+                margin:{
+                    bottom:25px;
+                }
+                .che{
+                    float:left;
+                    width:13px;
+                    height:13px;
+                }
+                .zidong{
+                    float:left;
+                    margin:{
+                        right:10px;
+                    }
+                }
+                .wangji{
+                    float:right;
+                }
+            }
+            .btn{
+                width:305px;
+                height:40px;
+                background:red;
+                color:white;
+                line-height: 40px;
+                text-align: center;
+                border: none;
+                 margin:{
+                    bottom:20px;
+                }
+            }
+            .yanzheng{
+                width:345px;
+                height:40px;
+                 margin-left:-20px;
+                background:#f5f5f5;
+//              margin-bottom:20px;
+                li{
+                    float:left;
+                    width:150px;
+                    line-height: 40px;;
+                    text-align: center;
+                    list-style: none;
+                    a{
+                        color: black;
+                        text-decoration: none;
+                    }
+                    span{
+                        float:left;
+                        width:10px;
+                        background:#CECECE;
+                    }
+                }
+            }
+            .hezuo{
+                padding:0 20px;
+                height:45px;
+                width:305px;
+                background:#eeeeee;
+                float:left;
+                margin-left:-20px;
+
+                line-height: 45px;
+            }
+            
+        }
+        img{
+            float:left;
+            margin:{
+                right:40px;
+            }
+        }
+    }
+        #saoma{
+            display: none;
+            width:345px;
+            height:380px;
+            background:white;
+            float:left;
+            position:relative;
+            h3,h4{
+                height:55px;
+                text-align: center;
+                line-height:55px;
+            }
+            .jiaotu{
+                position:absolute;
+                right:0;
+                top:0;
+                margin-right:0;
+                cursor:pointer;
+            }
+            .erweima{
+                height:164px;
+                img{
+                    
+                    width:160px;
+                    height:160px;
+                    
+                    margin-left:92px;
+                }
+            }
+        }
+}
+#footer-wrap{
+    height:270px;
+}

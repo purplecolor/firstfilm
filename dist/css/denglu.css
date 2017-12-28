@@ -1,0 +1,154 @@
+body, p, ul, h3 {
+  margin: 0;
+  padding: 0; }
+
+#header-wrap {
+  height: 98px; }
+
+header {
+  height: 98px;
+  margin: 0 auto;
+  width: 1270px;
+  border: 1px solid black; }
+  header img {
+    float: left;
+    margin-left: 140px;
+    margin-top: 30px; }
+  header span {
+    float: left;
+    width: 2px;
+    height: 40px;
+    background: black;
+    margin: 15px; }
+  header h3 {
+    float: left; }
+
+#denglu-wrap {
+  height: 495px;
+  background: #cecece; }
+  #denglu-wrap #denglu {
+    padding: 40px; }
+    #denglu-wrap #denglu .denglu {
+      width: 305px;
+      height: 330px;
+      background: white;
+      padding: 25px 20px;
+      float: left;
+      position: relative; }
+      #denglu-wrap #denglu .denglu img {
+        float: right;
+        margin-top: -25px;
+        margin-right: -20px;
+        cursor: pointer; }
+      #denglu-wrap #denglu .denglu .huangbiao {
+        width: 105px;
+        height: 21px;
+        border: 1px solid #ffd8a4;
+        background: #fffdee;
+        float: left;
+        font-size: 12px;
+        text-align: center;
+        line-height: 21px;
+        margin-top: -55px;
+        margin-left: 158px; }
+      #denglu-wrap #denglu .denglu .xiaobiao {
+        float: left;
+        width: 40px;
+        height: 40px;
+        background: url(../img/dialog-login.png) no-repeat;
+        border: 1px solid #cecece; }
+      #denglu-wrap #denglu .denglu .xiaobiao2 {
+        float: left;
+        width: 40px;
+        height: 40px;
+        background: url(../img/dialog-login.png) no-repeat;
+        border: 1px solid #cecece; }
+      #denglu-wrap #denglu .denglu input {
+        outline: none; }
+      #denglu-wrap #denglu .denglu .txt {
+        float: left;
+        height: 36px;
+        width: 250px;
+        margin-bottom: 25px; }
+      #denglu-wrap #denglu .denglu .psw {
+        float: left;
+        height: 36px;
+        width: 250px;
+        margin-bottom: 25px; }
+      #denglu-wrap #denglu .denglu p {
+        float: left;
+        height: 21px;
+        margin-bottom: 25px; }
+        #denglu-wrap #denglu .denglu p .che {
+          float: left;
+          width: 13px;
+          height: 13px; }
+        #denglu-wrap #denglu .denglu p .zidong {
+          float: left;
+          margin-right: 10px; }
+        #denglu-wrap #denglu .denglu p .wangji {
+          float: right; }
+      #denglu-wrap #denglu .denglu .btn {
+        width: 305px;
+        height: 40px;
+        background: red;
+        color: white;
+        line-height: 40px;
+        text-align: center;
+        border: none;
+        margin-bottom: 20px; }
+      #denglu-wrap #denglu .denglu .yanzheng {
+        width: 345px;
+        height: 40px;
+        margin-left: -20px;
+        background: #f5f5f5; }
+        #denglu-wrap #denglu .denglu .yanzheng li {
+          float: left;
+          width: 150px;
+          line-height: 40px;
+          text-align: center;
+          list-style: none; }
+          #denglu-wrap #denglu .denglu .yanzheng li a {
+            color: black;
+            text-decoration: none; }
+          #denglu-wrap #denglu .denglu .yanzheng li span {
+            float: left;
+            width: 10px;
+            background: #CECECE; }
+      #denglu-wrap #denglu .denglu .hezuo {
+        padding: 0 20px;
+        height: 45px;
+        width: 305px;
+        background: #eeeeee;
+        float: left;
+        margin-left: -20px;
+        line-height: 45px; }
+    #denglu-wrap #denglu img {
+      float: left;
+      margin-right: 40px; }
+  #denglu-wrap #saoma {
+    display: none;
+    width: 345px;
+    height: 380px;
+    background: white;
+    float: left;
+    position: relative; }
+    #denglu-wrap #saoma h3, #denglu-wrap #saoma h4 {
+      height: 55px;
+      text-align: center;
+      line-height: 55px; }
+    #denglu-wrap #saoma .jiaotu {
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin-right: 0;
+      cursor: pointer; }
+    #denglu-wrap #saoma .erweima {
+      height: 164px; }
+      #denglu-wrap #saoma .erweima img {
+        width: 160px;
+        height: 160px;
+        margin-left: 92px; }
+
+#footer-wrap {
+  height: 270px; }

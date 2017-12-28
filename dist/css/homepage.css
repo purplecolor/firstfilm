@@ -1,4 +1,4 @@
-body, p, section {
+body, p, section, img, a {
   margin: 0;
   padding: 0; }
 
@@ -36,7 +36,17 @@ li {
           display: block;
           width: 7px;
           height: 5px;
-          background: url(../img/fn_g_header.png) -140px -28px no-repeat; }
+          background: url(../img/fn_g_header.png) -140px -28px no-repeat;
+          transition: all 1s; }
+          #headnav-wrap #headnav .denglu .denglu-last span :hover {
+            transition: all 1s;
+            transform: scaleX(180deg); }
+      #headnav-wrap #headnav .denglu .dl {
+        cursor: pointer; }
+      #headnav-wrap #headnav .denglu .ze {
+        color: red;
+        margin-left: -5px;
+        cursor: pointer; }
       #headnav-wrap #headnav .denglu li {
         height: 12px;
         margin-top: 11px;
@@ -93,12 +103,17 @@ header {
   padding-top: 16px; }
   header img {
     float: left; }
-  header .sousuo {
+  header #sousuo {
     float: left;
-    margin-left: 30px;
     width: 442px;
     height: 38px;
-    border: 2px solid #d7063b; }
+    margin-left: 30px; }
+    header #sousuo .sousuo {
+      float: left;
+      width: 442px;
+      height: 38px;
+      border: 2px solid #d7063b;
+      outline: none; }
   header .btn {
     width: 98px;
     height: 44px;
@@ -189,36 +204,90 @@ header {
 
 #banner-wrap {
   width: 100%;
-  background: #ff8901;
+  background: #f09f2c;
   height: 455px; }
   #banner-wrap #banner {
     display: flex;
     justify-content: flex-start;
-    height: 455px; }
+    height: 455px;
+    position: relative; }
     #banner-wrap #banner #nav-right {
+      position: relative;
       padding-top: 3px;
       width: 191px;
       height: 452px;
       background: #f9f3ec; }
+      #banner-wrap #banner #nav-right .navright-yiji .nav-erji {
+        display: none;
+        width: 800px;
+        height: 455px;
+        position: absolute;
+        top: 0;
+        right: -800px;
+        z-index: 2;
+        background: white; }
+        #banner-wrap #banner #nav-right .navright-yiji .nav-erji .erji-title {
+          float: left;
+          margin: 10px; }
+      #banner-wrap #banner #nav-right .navright-yiji:hover .nav-erji {
+        display: block; }
+        #banner-wrap #banner #nav-right .navright-yiji:hover .nav-erji a {
+          color: black;
+          font-size: 12px; }
+      #banner-wrap #banner #nav-right .navright-yiji:hover p {
+        background: red; }
+      #banner-wrap #banner #nav-right .navright-yiji:hover a {
+        transition: all 0.2s;
+        transform: translatex(5px);
+        color: white;
+        border-bottom: 1px solid white;
+        text-decoration: underline; }
+      #banner-wrap #banner #nav-right .navright-yiji:hover img {
+        transition: all 0.2s;
+        transform: translatex(5px); }
+      #banner-wrap #banner #nav-right a, #banner-wrap #banner #nav-right img {
+        float: left; }
       #banner-wrap #banner #nav-right .nav-img {
         display: inline-block;
         width: 18px;
         height: 18px;
-        background: url(../img/shengxian.jpg) center no-repeat;
+        margin-top: 3px;
         margin-left: 8px;
         margin-right: 10px; }
+      #banner-wrap #banner #nav-right a {
+        display: block;
+        color: black; }
       #banner-wrap #banner #nav-right .nav-p {
         display: inline-block;
-        height: 30px;
+        width: 191px;
+        height: 28px;
         line-height: 30px;
+        box-sizing: border-box;
         font-size: 14px; }
     #banner-wrap #banner #lunbo {
       width: 800px;
       height: 454px;
-      overflow: hidden; }
-      #banner-wrap #banner #lunbo li {
-        float: left;
-        width: 800px; }
+      overflow: hidden;
+      position: relative; }
+      #banner-wrap #banner #lunbo #lunbo-photo {
+        position: relative; }
+        #banner-wrap #banner #lunbo #lunbo-photo li {
+          position: relative;
+          width: 800px;
+          height: 454px; }
+      #banner-wrap #banner #lunbo #nav {
+        position: absolute;
+        width: 800px;
+        height: 50px;
+        bottom: 0;
+        left: 300px; }
+        #banner-wrap #banner #lunbo #nav li {
+          float: left;
+          width: 10px;
+          height: 10px;
+          border: 2px solid #fff;
+          border-radius: 50%;
+          margin-right: 30px; }
     #banner-wrap #banner #kefu {
       width: 180px;
       height: 414px;
@@ -379,27 +448,33 @@ section {
             line-height: 25px; }
       section #one-floor .huowu .huowu-lei {
         display: flex;
+        float: left;
         flex-wrap: wrap;
         justify-content: flex-start;
         align-content: flex-start;
         width: 1000px;
-        height: 488px;
-        float: left;
-        background: green; }
+        height: 488px; }
         section #one-floor .huowu .huowu-lei .kuangone {
+          float: left;
+          box-sizing: border-box;
           width: 399px;
           height: 316px;
           border-bottom: 1px solid #CECECE; }
         section #one-floor .huowu .huowu-lei .kuangtwo {
+          float: left;
+          box-sizing: border-box;
           width: 199px;
           height: 316px;
           border-left: 1px solid #cecece;
           border-bottom: 1px solid #cecece; }
         section #one-floor .huowu .huowu-lei .kuangthree {
+          float: left;
+          box-sizing: border-box;
           width: 399px;
           height: 170px;
           border-bottom: 1px solid #CECECE; }
         section #one-floor .huowu .huowu-lei .kuangfour {
+          box-sizing: border-box;
           width: 199px;
           height: 170px;
           border-left: 1px solid #cecece;
@@ -411,13 +486,12 @@ section {
     section .jiatu-1 .jiatu-nav li {
       float: left;
       padding: 10px 0; }
-      section .jiatu-1 .jiatu-nav li a {
+      section .jiatu-1 .jiatu-nav li img {
         float: left;
         display: block;
         width: 100px;
         height: 30px;
-        background: url(../img/yanghejiuchang.jpg);
-        margin: 0 10px; }
+        margin: 0 9px; }
       section .jiatu-1 .jiatu-nav li .jiatu-xian {
         float: left;
         display: block;
@@ -425,8 +499,6 @@ section {
         height: 20px;
         background: #CECECE;
         margin-top: 5px; }
-      section .jiatu-1 .jiatu-nav li .jiatu-nav-last {
-        margin: 0; }
   section #two-floor {
     margin-bottom: 10px;
     height: 524px; }
@@ -518,16 +590,19 @@ section {
         float: left;
         background: green; }
         section #two-floor .f2-huowu .f2-huowu-lei .f2-kuangone {
+          float: left;
           width: 399px;
           height: 243px;
           border-bottom: 1px solid #CECECE;
           border-left: 1px solid #cecece; }
         section #two-floor .f2-huowu .f2-huowu-lei .f2-kuangtwo {
+          float: left;
           width: 199px;
           height: 243px;
           border-left: 1px solid #cecece;
           border-bottom: 1px solid #cecece; }
         section #two-floor .f2-huowu .f2-huowu-lei .f2-kuangfour {
+          float: left;
           width: 199px;
           height: 243px;
           border-left: 1px solid #cecece;
@@ -536,24 +611,23 @@ section {
     width: 1190px;
     height: 61px;
     margin-bottom: 25px; }
-    section .jiatu-2 .jiatu-nav li {
+    section .jiatu-2 .f2-jiatu-nav li {
       float: left;
       padding: 10px 0; }
-      section .jiatu-2 .jiatu-nav li a {
+      section .jiatu-2 .f2-jiatu-nav li img {
         float: left;
         display: block;
         width: 100px;
         height: 30px;
-        background: url(../img/yanghejiuchang.jpg);
-        margin: 0 10px; }
-      section .jiatu-2 .jiatu-nav li .jiatu-xian {
+        margin: 0 9px; }
+      section .jiatu-2 .f2-jiatu-nav li .jiatu-xian {
         float: left;
         display: block;
         width: 1px;
         height: 20px;
         background: #CECECE;
         margin-top: 5px; }
-      section .jiatu-2 .jiatu-nav li .jiatu-nav-last {
+      section .jiatu-2 .f2-jiatu-nav li .jiatu-nav-last {
         margin: 0; }
   section .jiatu-2-2 {
     width: 1190px;
@@ -655,19 +729,23 @@ section {
         float: left;
         background: green; }
         section #three-floor .f3-huowu .f3-huowu-lei .f3-kuangone {
+          float: left;
           width: 399px;
           height: 316px;
           border-bottom: 1px solid #CECECE; }
         section #three-floor .f3-huowu .f3-huowu-lei .f3-kuangtwo {
+          float: left;
           width: 199px;
           height: 316px;
           border-left: 1px solid #cecece;
           border-bottom: 1px solid #cecece; }
         section #three-floor .f3-huowu .f3-huowu-lei .f3-kuangthree {
+          float: left;
           width: 399px;
           height: 170px;
           border-bottom: 1px solid #CECECE; }
         section #three-floor .f3-huowu .f3-huowu-lei .f3-kuangfour {
+          float: left;
           width: 199px;
           height: 170px;
           border-left: 1px solid #cecece;
@@ -676,24 +754,23 @@ section {
     width: 1190px;
     height: 61px;
     margin-bottom: 25px; }
-    section .jiatu-3-1 .jiatu-nav li {
+    section .jiatu-3-1 .f3-jiatu-nav li {
       float: left;
       padding: 10px 0; }
-      section .jiatu-3-1 .jiatu-nav li a {
+      section .jiatu-3-1 .f3-jiatu-nav li img {
         float: left;
         display: block;
         width: 100px;
         height: 30px;
-        background: url(../img/yanghejiuchang.jpg);
-        margin: 0 10px; }
-      section .jiatu-3-1 .jiatu-nav li .jiatu-xian {
+        margin: 0 9px; }
+      section .jiatu-3-1 .f3-jiatu-nav li .jiatu-xian {
         float: left;
         display: block;
         width: 1px;
         height: 20px;
         background: #CECECE;
         margin-top: 5px; }
-      section .jiatu-3-1 .jiatu-nav li .jiatu-nav-last {
+      section .jiatu-3-1 .f3-jiatu-nav li .jiatu-nav-last {
         margin: 0; }
   section .jiatu-3-2 {
     width: 1190px;
@@ -824,11 +901,13 @@ section {
         float: left;
         background: green; }
         section #four-floor .f4-huowu .f4-huowu-lei .f4-kuangone {
+          float: left;
           width: 399px;
           height: 243px;
           border-bottom: 1px solid #CECECE;
           border-left: 1px solid #cecece; }
         section #four-floor .f4-huowu .f4-huowu-lei .f4-kuangtwo {
+          float: left;
           width: 199px;
           height: 243px;
           border-left: 1px solid #cecece;
@@ -837,24 +916,23 @@ section {
     width: 1190px;
     height: 61px;
     margin-bottom: 25px; }
-    section .jiatu-4-1 .jiatu-nav li {
+    section .jiatu-4-1 .f4-jiatu-nav li {
       float: left;
       padding: 10px 0; }
-      section .jiatu-4-1 .jiatu-nav li a {
+      section .jiatu-4-1 .f4-jiatu-nav li img {
         float: left;
         display: block;
         width: 100px;
         height: 30px;
-        background: url(../img/yanghejiuchang.jpg);
-        margin: 0 10px; }
-      section .jiatu-4-1 .jiatu-nav li .jiatu-xian {
+        margin: 0 9px; }
+      section .jiatu-4-1 .f4-jiatu-nav li .jiatu-xian {
         float: left;
         display: block;
         width: 1px;
         height: 20px;
         background: #CECECE;
         margin-top: 5px; }
-      section .jiatu-4-1 .jiatu-nav li .jiatu-nav-last {
+      section .jiatu-4-1 .f4-jiatu-nav li .jiatu-nav-last {
         margin: 0; }
   section .jiatu-4-2 {
     width: 1190px;
@@ -981,18 +1059,21 @@ section {
         float: left;
         background: green; }
         section #five-floor .f5-huowu .f5-huowu-lei .f5-kuangone {
+          float: left;
           width: 399px;
           height: 243px;
           float: left;
           border-bottom: 1px solid #CECECE;
           border-left: 1px solid #cecece; }
         section #five-floor .f5-huowu .f5-huowu-lei .f5-kuangtwo {
+          float: left;
           width: 199px;
           height: 121px;
           float: left;
           border-left: 1px solid #cecece;
           border-bottom: 1px solid #cecece; }
         section #five-floor .f5-huowu .f5-huowu-lei .f5-kuangthree {
+          float: left;
           width: 199px;
           height: 243px;
           float: left;
@@ -1002,24 +1083,23 @@ section {
     width: 1190px;
     height: 61px;
     margin-bottom: 25px; }
-    section .jiatu-5-1 .jiatu-nav li {
+    section .jiatu-5-1 .f5-jiatu-nav li {
       float: left;
       padding: 10px 0; }
-      section .jiatu-5-1 .jiatu-nav li a {
+      section .jiatu-5-1 .f5-jiatu-nav li img {
         float: left;
         display: block;
         width: 100px;
         height: 30px;
-        background: url(../img/yanghejiuchang.jpg);
-        margin: 0 10px; }
-      section .jiatu-5-1 .jiatu-nav li .jiatu-xian {
+        margin: 0 9px; }
+      section .jiatu-5-1 .f5-jiatu-nav li .jiatu-xian {
         float: left;
         display: block;
         width: 1px;
         height: 20px;
         background: #CECECE;
         margin-top: 5px; }
-      section .jiatu-5-1 .jiatu-nav li .jiatu-nav-last {
+      section .jiatu-5-1 .f5-jiatu-nav li .jiatu-nav-last {
         margin: 0; }
   section #six-floor {
     margin-bottom: 10px; }
@@ -1141,11 +1221,13 @@ section {
         float: left;
         background: green; }
         section #six-floor .f6-huowu .f6-huowu-lei .f6-kuangone {
+          float: left;
           width: 399px;
           height: 243px;
           border-bottom: 1px solid #CECECE;
           border-left: 1px solid #cecece; }
         section #six-floor .f6-huowu .f6-huowu-lei .f6-kuangtwo {
+          float: left;
           width: 199px;
           height: 243px;
           border-left: 1px solid #cecece;
@@ -1154,24 +1236,23 @@ section {
     width: 1190px;
     height: 61px;
     margin-bottom: 25px; }
-    section .jiatu-6-1 .jiatu-nav li {
+    section .jiatu-6-1 .f6-jiatu-nav li {
       float: left;
       padding: 10px 0; }
-      section .jiatu-6-1 .jiatu-nav li a {
+      section .jiatu-6-1 .f6-jiatu-nav li img {
         float: left;
         display: block;
         width: 100px;
         height: 30px;
-        background: url(../img/yanghejiuchang.jpg);
-        margin: 0 10px; }
-      section .jiatu-6-1 .jiatu-nav li .jiatu-xian {
+        margin: 0 9px; }
+      section .jiatu-6-1 .f6-jiatu-nav li .jiatu-xian {
         float: left;
         display: block;
         width: 1px;
         height: 20px;
         background: #CECECE;
         margin-top: 5px; }
-      section .jiatu-6-1 .jiatu-nav li .jiatu-nav-last {
+      section .jiatu-6-1 .f6-jiatu-nav li .jiatu-nav-last {
         margin: 0; }
   section #seven-floor {
     height: 524px;
@@ -1264,16 +1345,19 @@ section {
         float: left;
         background: green; }
         section #seven-floor .f7-huowu .f7-huowu-lei .f7-kuangone {
+          float: left;
           width: 399px;
           height: 243px;
           border-bottom: 1px solid #CECECE;
           border-left: 1px solid #cecece; }
         section #seven-floor .f7-huowu .f7-huowu-lei .f7-kuangtwo {
+          float: left;
           width: 199px;
           height: 243px;
           border-left: 1px solid #cecece;
           border-bottom: 1px solid #cecece; }
         section #seven-floor .f7-huowu .f7-huowu-lei .f7-kuangfour {
+          float: left;
           width: 199px;
           height: 243px;
           border-left: 1px solid #cecece;
@@ -1282,24 +1366,23 @@ section {
     width: 1190px;
     height: 61px;
     margin-bottom: 25px; }
-    section .jiatu-7 .jiatu-nav li {
+    section .jiatu-7 .f7-jiatu-nav li {
       float: left;
       padding: 10px 0; }
-      section .jiatu-7 .jiatu-nav li a {
+      section .jiatu-7 .f7-jiatu-nav li img {
         float: left;
         display: block;
         width: 100px;
         height: 30px;
-        background: url(../img/yanghejiuchang.jpg);
-        margin: 0 10px; }
-      section .jiatu-7 .jiatu-nav li .jiatu-xian {
+        margin: 0 9px; }
+      section .jiatu-7 .f7-jiatu-nav li .jiatu-xian {
         float: left;
         display: block;
         width: 1px;
         height: 20px;
         background: #CECECE;
         margin-top: 5px; }
-      section .jiatu-7 .jiatu-nav li .jiatu-nav-last {
+      section .jiatu-7 .f7-jiatu-nav li .jiatu-nav-last {
         margin: 0; }
   section #eight-floor {
     height: 524px;
@@ -1392,16 +1475,19 @@ section {
         float: left;
         background: green; }
         section #eight-floor .f8-huowu .f8-huowu-lei .f8-kuangone {
+          float: left;
           width: 399px;
           height: 243px;
           border-bottom: 1px solid #CECECE;
           border-left: 1px solid #cecece; }
         section #eight-floor .f8-huowu .f8-huowu-lei .f8-kuangtwo {
+          float: left;
           width: 199px;
           height: 243px;
           border-left: 1px solid #cecece;
           border-bottom: 1px solid #cecece; }
         section #eight-floor .f8-huowu .f8-huowu-lei .f8-kuangfour {
+          float: left;
           width: 199px;
           height: 243px;
           border-left: 1px solid #cecece;
@@ -1410,24 +1496,23 @@ section {
     width: 1190px;
     height: 61px;
     margin-bottom: 25px; }
-    section .jiatu-8 .jiatu-nav li {
+    section .jiatu-8 .f8-jiatu-nav li {
       float: left;
       padding: 10px 0; }
-      section .jiatu-8 .jiatu-nav li a {
+      section .jiatu-8 .f8-jiatu-nav li img {
         float: left;
         display: block;
         width: 100px;
         height: 30px;
-        background: url(../img/yanghejiuchang.jpg);
-        margin: 0 10px; }
-      section .jiatu-8 .jiatu-nav li .jiatu-xian {
+        margin: 0 9px; }
+      section .jiatu-8 .f8-jiatu-nav li .jiatu-xian {
         float: left;
         display: block;
         width: 1px;
         height: 20px;
         background: #CECECE;
         margin-top: 5px; }
-      section .jiatu-8 .jiatu-nav li .jiatu-nav-last {
+      section .jiatu-8 .f8-jiatu-nav li .jiatu-nav-last {
         margin: 0; }
   section #nine-floor {
     height: 524px;
@@ -1538,24 +1623,23 @@ section {
     width: 1190px;
     height: 61px;
     margin-bottom: 25px; }
-    section .jiatu-9 .jiatu-nav li {
+    section .jiatu-9 .f9-jiatu-nav li {
       float: left;
       padding: 10px 0; }
-      section .jiatu-9 .jiatu-nav li a {
+      section .jiatu-9 .f9-jiatu-nav li img {
         float: left;
         display: block;
         width: 100px;
         height: 30px;
-        background: url(../img/yanghejiuchang.jpg);
-        margin: 0 10px; }
-      section .jiatu-9 .jiatu-nav li .jiatu-xian {
+        margin: 0 9px; }
+      section .jiatu-9 .f9-jiatu-nav li .jiatu-xian {
         float: left;
         display: block;
         width: 1px;
         height: 20px;
         background: #CECECE;
         margin-top: 5px; }
-      section .jiatu-9 .jiatu-nav li .jiatu-nav-last {
+      section .jiatu-9 .f9-jiatu-nav li .jiatu-nav-last {
         margin: 0; }
   section #ten-floor {
     height: 524px;
@@ -1648,16 +1732,19 @@ section {
         float: left;
         background: green; }
         section #ten-floor .f10-huowu .f10-huowu-lei .f10-kuangone {
+          float: left;
           width: 399px;
           height: 243px;
           border-bottom: 1px solid #CECECE;
           border-left: 1px solid #cecece; }
         section #ten-floor .f10-huowu .f10-huowu-lei .f10-kuangtwo {
+          float: left;
           width: 199px;
           height: 243px;
           border-left: 1px solid #cecece;
           border-bottom: 1px solid #cecece; }
         section #ten-floor .f10-huowu .f10-huowu-lei .f10-kuangfour {
+          float: left;
           width: 199px;
           height: 243px;
           border-left: 1px solid #cecece;
@@ -1666,24 +1753,23 @@ section {
     width: 1190px;
     height: 61px;
     margin-bottom: 25px; }
-    section .jiatu-10 .jiatu-nav li {
+    section .jiatu-10 .f10-jiatu-nav li {
       float: left;
       padding: 10px 0; }
-      section .jiatu-10 .jiatu-nav li a {
+      section .jiatu-10 .f10-jiatu-nav li img {
         float: left;
         display: block;
         width: 100px;
         height: 30px;
-        background: url(../img/yanghejiuchang.jpg);
-        margin: 0 10px; }
-      section .jiatu-10 .jiatu-nav li .jiatu-xian {
+        margin: 0 9px; }
+      section .jiatu-10 .f10-jiatu-nav li .jiatu-xian {
         float: left;
         display: block;
         width: 1px;
         height: 20px;
         background: #CECECE;
         margin-top: 5px; }
-      section .jiatu-10 .jiatu-nav li .jiatu-nav-last {
+      section .jiatu-10 .f10-jiatu-nav li .jiatu-nav-last {
         margin: 0; }
   section #eleven-floor {
     height: 524px;
@@ -1776,16 +1862,19 @@ section {
         float: left;
         background: green; }
         section #eleven-floor .f11-huowu .f11-huowu-lei .f11-kuangone {
+          float: left;
           width: 399px;
           height: 243px;
           border-bottom: 1px solid #CECECE;
           border-left: 1px solid #cecece; }
         section #eleven-floor .f11-huowu .f11-huowu-lei .f11-kuangtwo {
+          float: left;
           width: 199px;
           height: 243px;
           border-left: 1px solid #cecece;
           border-bottom: 1px solid #cecece; }
         section #eleven-floor .f11-huowu .f11-huowu-lei .f11-kuangfour {
+          float: left;
           width: 199px;
           height: 243px;
           border-left: 1px solid #cecece;
@@ -1794,24 +1883,22 @@ section {
     width: 1190px;
     height: 61px;
     margin-bottom: 25px; }
-    section .jiatu-11 .jiatu-nav li {
-      float: left;
-      padding: 10px 0; }
-      section .jiatu-11 .jiatu-nav li a {
+    section .jiatu-11 #f11-jiatu-nav .f11li {
+      float: left; }
+      section .jiatu-11 #f11-jiatu-nav .f11li img {
         float: left;
         display: block;
         width: 100px;
         height: 30px;
-        background: url(../img/yanghejiuchang.jpg);
-        margin: 0 10px; }
-      section .jiatu-11 .jiatu-nav li .jiatu-xian {
+        margin: 0 9px; }
+      section .jiatu-11 #f11-jiatu-nav .f11li .jiatu-xian {
         float: left;
         display: block;
         width: 1px;
         height: 20px;
         background: #CECECE;
         margin-top: 5px; }
-      section .jiatu-11 .jiatu-nav li .jiatu-nav-last {
+      section .jiatu-11 #f11-jiatu-nav .f11li .jiatu-nav-last {
         margin: 0; }
   section #kongbai {
     height: 60px;
@@ -1834,8 +1921,26 @@ article {
   border-top: 1px solid #cecece; }
 
 #fuwu {
-  height: 202px;
-  background: yellow; }
+  height: 162px;
+  padding-top: 40px; }
+  #fuwu .one {
+    margin: 0px 60px;
+    float: left; }
+  #fuwu .two {
+    margin: 0px 60px;
+    float: left; }
+  #fuwu .three {
+    margin: 0px 60px;
+    float: left; }
+  #fuwu .four {
+    margin: 0px 60px;
+    float: left; }
+  #fuwu .five {
+    margin: 0px 60px;
+    float: left; }
+  #fuwu a {
+    color: black;
+    font-size: 12px; }
 
 footer {
   height: 252px;

@@ -1,0 +1,237 @@
+{
+    "code": "0",
+    "data": [
+        [
+            {
+                "child": [
+                    {
+                        "child": null,
+                        "display": null,
+                        "gcSeq": "C51654",
+                        "icon": null,
+                        "isHighlight": "1",
+                        "link": "http://search.feiniu.com/?q=%E7%B2%BD%E5%AD%90%E5%88%B8&tp=search.0.1000-searchform.1.1490844313855SVwU",
+                        "showName": "粽子券",
+                        "siName": "粽子券",
+                        "siPseq": "C48970",
+                        "siSeq": "C51654",
+                        "siType": "8"
+                    },
+                    {
+                        "child": null,
+                        "display": null,
+                        "gcSeq": "C51715",
+                        "icon": null,
+                        "isHighlight": "0",
+                        "link": "http://list.feiniu.com/C18478?tp=list.C18728.1003_cont_15-1_1.2.1490168964685gzlx",
+                        "showName": "冰淇淋券",
+                        "siName": "冰淇淋券",
+                        "siPseq": "C48970",
+                        "siSeq": "C51715",
+                        "siType": "8"
+                    }
+                ],
+                "display": [
+                    {
+                        "isHighlight": "0",
+                        "link": "http://list.feiniu.com/C18478?tp=list.C18728.1003_cont_15-1_1.2.1490168964685gzlx",
+                        "text": "当季热卖"
+                    }
+                ],
+                "gcSeq": "C48970",
+                "icon": null,
+                "isHighlight": "0",
+                "link": "/category/C48970",
+                "showName": "当季热卖",
+                "siName": "当季热卖",
+                "siPseq": "CG100757",
+                "siSeq": "C48970",
+                "siType": "7"
+            }
+        ],
+        [
+            {
+                "child": [
+                    {
+                        "child": null,
+                        "display": null,
+                        "gcSeq": "C51716",
+                        "icon": null,
+                        "isHighlight": "1",
+                        "link": "http://list.feiniu.com/C18457?tp=search.0.1003_cont_15-1_1.3.1490168626326o75m",
+                        "showName": "面包/蛋糕券",
+                        "siName": "面包/蛋糕券",
+                        "siPseq": "CG100759",
+                        "siSeq": "C51716",
+                        "siType": "8"
+                    },
+                    {
+                        "child": null,
+                        "display": null,
+                        "gcSeq": "C51717",
+                        "icon": null,
+                        "isHighlight": "0",
+                        "link": "http://search.feiniu.com/?q=来伊份券&tp=search.0.1000-searchform.1.1490168850339EXmd",
+                        "showName": "休闲零食券",
+                        "siName": "休闲零食券",
+                        "siPseq": "CG100759",
+                        "siSeq": "C51717",
+                        "siType": "8"
+                    },
+                    {
+                        "child": null,
+                        "display": null,
+                        "gcSeq": "C51718",
+                        "icon": null,
+                        "isHighlight": "0",
+                        "link": "http://list.feiniu.com/C18479?tp=list.C49012.1003_cont_15-1_1.4.1490168797300wGcl",
+                        "showName": "餐饮美食券",
+                        "siName": "餐饮美食券",
+                        "siPseq": "CG100759",
+                        "siSeq": "C51718",
+                        "siType": "8"
+                    },
+                    {
+                        "child": null,
+                        "display": null,
+                        "gcSeq": "C51719",
+                        "icon": null,
+                        "isHighlight": "1",
+                        "link": "http://list.feiniu.com/C18478?tp=list.C18728.1003_cont_15-1_1.2.1490168964685gzlx",
+                        "showName": "冰淇淋甜点券",
+                        "siName": "冰淇淋甜点券",
+                        "siPseq": "CG100759",
+                        "siSeq": "C51719",
+                        "siType": "8"
+                    },
+                    {
+                        "child": null,
+                        "display": null,
+                        "gcSeq": "CC202288",
+                        "icon": null,
+                        "isHighlight": "0",
+                        "link": "/category/C18366",
+                        "showName": "休闲零食券",
+                        "siName": "休闲零食券",
+                        "siPseq": "CG100759",
+                        "siSeq": "C18366",
+                        "siType": "2"
+                    }
+                ],
+                "display": [
+                    {
+                        "isHighlight": "0",
+                        "link": "http://list.feiniu.com/C18728?tp=list.C18478.1003_cont_15-1_1.1.1490606298534To97",
+                        "text": "食品票券"
+                    }
+                ],
+                "gcSeq": "CG100759",
+                "icon": null,
+                "isHighlight": "0",
+                "link": "/category/C18728",
+                "showName": "食品票券",
+                "siName": "食品票券",
+                "siPseq": "CG100757",
+                "siSeq": "C18728",
+                "siType": "1"
+            },
+            {
+                "child": [
+                    {
+                        "child": null,
+                        "display": null,
+                        "gcSeq": "C51720",
+                        "icon": null,
+                        "isHighlight": "0",
+                        "link": "http://search.feiniu.com/?q=超市购物卡&tp=list.C18492.1000-searchform.1.1490169043575Hxjb",
+                        "showName": "超市卡/商场购物卡",
+                        "siName": "超市卡/商场购物卡",
+                        "siPseq": "CG100758",
+                        "siSeq": "C51720",
+                        "siType": "8"
+                    }
+                ],
+                "display": null,
+                "gcSeq": "CG100758",
+                "icon": null,
+                "isHighlight": "0",
+                "link": "/category/C18713",
+                "showName": "购物卡",
+                "siName": "购物卡",
+                "siPseq": "CG100757",
+                "siSeq": "C18713",
+                "siType": "1"
+            },
+            {
+                "child": [
+                    {
+                        "child": null,
+                        "display": null,
+                        "gcSeq": "C51721",
+                        "icon": null,
+                        "isHighlight": "1",
+                        "link": "http://search.feiniu.com/?q=钻典米券&tp=search.0.1000-searchform.1.1490169282766QLtM",
+                        "showName": "粮油",
+                        "siName": "粮油",
+                        "siPseq": "CG100761",
+                        "siSeq": "C51721",
+                        "siType": "8"
+                    },
+                    {
+                        "child": null,
+                        "display": null,
+                        "gcSeq": "C51722",
+                        "icon": null,
+                        "isHighlight": "0",
+                        "link": "http://search.feiniu.com/?q=水产券&tp=search.0.1000-searchform.1.1490169292534PrbN",
+                        "showName": "水产",
+                        "siName": "水产",
+                        "siPseq": "CG100761",
+                        "siSeq": "C51722",
+                        "siType": "8"
+                    }
+                ],
+                "display": null,
+                "gcSeq": "CG100761",
+                "icon": null,
+                "isHighlight": "0",
+                "link": "/category/C18723",
+                "showName": "综合礼券",
+                "siName": "综合礼券",
+                "siPseq": "CG100757",
+                "siSeq": "C18723",
+                "siType": "1"
+            }
+        ],
+        [
+            {
+                "child": [
+                    {
+                        "child": null,
+                        "display": null,
+                        "gcSeq": "C51723",
+                        "icon": null,
+                        "isHighlight": "1",
+                        "link": "http://search.feiniu.com/?q=心理咨询&tp=search.0.1000-searchform.1.1490169325258c1W1",
+                        "showName": "医疗及健康服务",
+                        "siName": "医疗及健康服务",
+                        "siPseq": "CG100762",
+                        "siSeq": "C51723",
+                        "siType": "8"
+                    }
+                ],
+                "display": null,
+                "gcSeq": "CG100762",
+                "icon": null,
+                "isHighlight": "0",
+                "link": "/category/C18724",
+                "showName": "生活服务",
+                "siName": "生活服务",
+                "siPseq": "CG100757",
+                "siSeq": "C18724",
+                "siType": "1"
+            }
+        ]
+    ],
+    "msg": null
+}
